@@ -1,0 +1,2591 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="专注于分布式高性能技术架构、IoT云平台、机器/深度学习">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Technical Blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Technical Blog">
+<meta property="og:description" content="专注于分布式高性能技术架构、IoT云平台、机器/深度学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Technical Blog">
+<meta name="twitter:description" content="专注于分布式高性能技术架构、IoT云平台、机器/深度学习">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title> Technical Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Technical Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Welcome to my world!</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/ai-objectdetection/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/ai-objectdetection/" itemprop="url">
+                  使用定制数据集训练Faster-RCNN模型
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-10T20:46:25+08:00">
+                2017-10-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine Learning</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Machine-Learning/Deep-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Deep Learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/ai-objectdetection/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="ai-objectdetection/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="基本概念介绍"><a href="#基本概念介绍" class="headerlink" title="基本概念介绍"></a>基本概念介绍</h2><p>目标检测的四个基本步骤：</p>
+<ul>
+<li>候选区域生成</li>
+<li>特征提取</li>
+<li>分类</li>
+<li>位置精修</li>
+</ul>
+<p>RCNN的算法：</p>
+<ul>
+<li><ol>
+<li>将一张图片生成2K个候选区域；</li>
+</ol>
+</li>
+<li><ol>
+<li>对每个候选区域，使用深度网络(deep net)提取特征；</li>
+</ol>
+</li>
+<li><ol>
+<li>特征送入每一类的SVM分类器，判别是否属于该类；</li>
+</ol>
+</li>
+<li><ol>
+<li>使用回归器精细修正候选框的位置；</li>
+</ol>
+</li>
+</ul>
+<p>从RCNN到fast RCNN，再到faster RCNN，目标检测的四个基本步骤终于被统一到一个深度网络框架之内。所有计算没有重复，完全在GPU中完成，大大提高了运行速度。<br><img src="/images/rcnn-fast-faster.png" alt=""></p>
+<p>fast RCNN在RCNN的基础之上，将分类和位置精修统一到了一个深度网络之内。faster RCNN可以简单地看做“区域生成网络+fast RCNN“的系统，用区域生成网络代替fast RCNN中的Selective Search方法。</p>
+<h2 id="Faster-RCNN的配置与编译"><a href="#Faster-RCNN的配置与编译" class="headerlink" title="Faster-RCNN的配置与编译"></a>Faster-RCNN的配置与编译</h2><h3 id="配置Caffe环境"><a href="#配置Caffe环境" class="headerlink" title="配置Caffe环境"></a>配置Caffe环境</h3><p>下载有关Caffe的所有的依赖项，可以查看安装Caffe的教程</p>
+<h3 id="配置Faster-RCNN环境"><a href="#配置Faster-RCNN环境" class="headerlink" title="配置Faster-RCNN环境"></a>配置Faster-RCNN环境</h3><p>安装cython,python-opencv,easydict:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python-numpy</div><div class="line">sudo apt-get install python-scipy</div><div class="line">pip install cython</div><div class="line">pip install easydict</div><div class="line">pip install shutil</div><div class="line">pip install cPickle</div><div class="line">pip install uuid</div><div class="line">pip install multiprocessing</div><div class="line">pip install xml</div></pre></td></tr></table></figure></p>
+<p>  下载py-faster-rcnn<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Make sure to clone with --recursive  </div><div class="line">git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git</div></pre></td></tr></table></figure></p>
+<p>  进入py-faster-rcnn/lib，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make</div></pre></td></tr></table></figure></p>
+<p>  进入py-faster-rcnn/caffe-faster-rcnn，将我改好的Makefile.config复制该路径下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div></pre></td><td class="code"><pre><div class="line">## Refer to http://caffe.berkeleyvision.org/installation.html</div><div class="line"># Contributions simplifying and improving our build system are welcome!</div><div class="line"></div><div class="line"># cuDNN acceleration switch (uncomment to build with cuDNN).</div><div class="line">USE_CUDNN := 1</div><div class="line"></div><div class="line"># CPU-only switch (uncomment to build without GPU support).</div><div class="line"># CPU_ONLY := 1</div><div class="line"></div><div class="line"># uncomment to disable IO dependencies and corresponding data layers</div><div class="line"># USE_OPENCV := 0</div><div class="line"># USE_LEVELDB := 0</div><div class="line"># USE_LMDB := 0</div><div class="line"></div><div class="line"># uncomment to allow MDB_NOLOCK when reading LMDB files (only if necessary)</div><div class="line">#	You should not set this flag if you will be reading LMDBs with any</div><div class="line">#	possibility of simultaneous read and write</div><div class="line"># ALLOW_LMDB_NOLOCK := 1</div><div class="line"></div><div class="line"># Uncomment if you&apos;re using OpenCV 3</div><div class="line">OPENCV_VERSION := 3</div><div class="line"></div><div class="line"># To customize your choice of compiler, uncomment and set the following.</div><div class="line"># N.B. the default for Linux is g++ and the default for OSX is clang++</div><div class="line"># CUSTOM_CXX := g++</div><div class="line"></div><div class="line"># CUDA directory contains bin/ and lib/ directories that we need.</div><div class="line">CUDA_DIR := /usr/local/cuda</div><div class="line"># On Ubuntu 14.04, if cuda tools are installed via</div><div class="line"># &quot;sudo apt-get install nvidia-cuda-toolkit&quot; then use this instead:</div><div class="line"># CUDA_DIR := /usr</div><div class="line"></div><div class="line"># CUDA architecture setting: going with all of them.</div><div class="line"># For CUDA &lt; 6.0, comment the *_50 through *_61 lines for compatibility.</div><div class="line"># For CUDA &lt; 8.0, comment the *_60 and *_61 lines for compatibility.</div><div class="line">CUDA_ARCH := -gencode arch=compute_20,code=sm_20 \</div><div class="line">		-gencode arch=compute_20,code=sm_21 \</div><div class="line">		-gencode arch=compute_30,code=sm_30 \</div><div class="line">		-gencode arch=compute_35,code=sm_35 \</div><div class="line">		-gencode arch=compute_50,code=sm_50 \</div><div class="line">		-gencode arch=compute_52,code=sm_52 \</div><div class="line">		-gencode arch=compute_60,code=sm_60 \</div><div class="line">		-gencode arch=compute_61,code=sm_61 \</div><div class="line">		-gencode arch=compute_61,code=compute_61</div><div class="line"></div><div class="line"># BLAS choice:</div><div class="line"># atlas for ATLAS (default)</div><div class="line"># mkl for MKL</div><div class="line"># open for OpenBlas</div><div class="line">BLAS := open</div><div class="line"># Custom (MKL/ATLAS/OpenBLAS) include and lib directories.</div><div class="line"># Leave commented to accept the defaults for your choice of BLAS</div><div class="line"># (which should work)!</div><div class="line"># BLAS_INCLUDE := /path/to/your/blas</div><div class="line"># BLAS_LIB := /path/to/your/blas</div><div class="line"></div><div class="line"># Homebrew puts openblas in a directory that is not on the standard search path</div><div class="line"># BLAS_INCLUDE := $(shell brew --prefix openblas)/include</div><div class="line"># BLAS_LIB := $(shell brew --prefix openblas)/lib</div><div class="line"></div><div class="line"># This is required only if you will compile the matlab interface.</div><div class="line"># MATLAB directory should contain the mex binary in /bin.</div><div class="line"># MATLAB_DIR := /usr/local</div><div class="line"># MATLAB_DIR := /Applications/MATLAB_R2012b.app</div><div class="line"></div><div class="line"># NOTE: this is required only if you will compile the python interface.</div><div class="line"># We need to be able to find Python.h and numpy/arrayobject.h.</div><div class="line">PYTHON_INCLUDE := /usr/include/python2.7 \</div><div class="line">		/usr/lib/python2.7/dist-packages/numpy/core/include</div><div class="line"># Anaconda Python distribution is quite popular. Include path:</div><div class="line"># Verify anaconda location, sometimes it&apos;s in root.</div><div class="line"># ANACONDA_HOME := $(HOME)/anaconda</div><div class="line"># PYTHON_INCLUDE := $(ANACONDA_HOME)/include \</div><div class="line">		# $(ANACONDA_HOME)/include/python2.7 \</div><div class="line">		# $(ANACONDA_HOME)/lib/python2.7/site-packages/numpy/core/include</div><div class="line"></div><div class="line"># Uncomment to use Python 3 (default is Python 2)</div><div class="line"># PYTHON_LIBRARIES := boost_python3 python3.5m</div><div class="line"># PYTHON_INCLUDE := /usr/include/python3.5m \</div><div class="line">#                 /usr/lib/python3.5/dist-packages/numpy/core/include</div><div class="line"></div><div class="line"># We need to be able to find libpythonX.X.so or .dylib.</div><div class="line">PYTHON_LIB := /usr/lib</div><div class="line"># PYTHON_LIB := $(ANACONDA_HOME)/lib</div><div class="line"></div><div class="line"># Homebrew installs numpy in a non standard path (keg only)</div><div class="line"># PYTHON_INCLUDE += $(dir $(shell python -c &apos;import numpy.core; print(numpy.core.__file__)&apos;))/include</div><div class="line"># PYTHON_LIB += $(shell brew --prefix numpy)/lib</div><div class="line"></div><div class="line"># Uncomment to support layers written in Python (will link against Python libs)</div><div class="line"> WITH_PYTHON_LAYER := 1</div><div class="line"></div><div class="line"># Whatever else you find you need goes here.</div><div class="line">INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include</div><div class="line">LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib</div><div class="line">JAVA_HOME := /usr/lib/jvm/java-8-openjdk-ppc64el</div><div class="line">INCLUDE_DIRS += $(JAVA_HOME)/include $(JAVA_HOME)/include/linux</div><div class="line">INCLUDE_DIRS += /usr/include/hdf5/serial</div><div class="line">LIBRARY_DIRS += /usr/lib/powerpc64le-linux-gnu/hdf5/serial</div><div class="line">INCLUDE_DIRS += /opt/DL/nccl/include</div><div class="line">LIBRARY_DIRS += /opt/DL/nccl/lib</div><div class="line">INCLUDE_DIRS += /usr/local/lib/python2.7/dist-packages/numpy/core/include</div><div class="line">LIBRARY_DIRS += /usr/local/nvidia/lib /usr/local/nvidia/lib64  /opt/DL/nccl/lib /opt/DL/openblas/lib</div><div class="line"></div><div class="line"># If Homebrew is installed at a non standard location (for example your home directory) and you use it for general dependencies</div><div class="line"># INCLUDE_DIRS += $(shell brew --prefix)/include</div><div class="line"># LIBRARY_DIRS += $(shell brew --prefix)/lib</div><div class="line"></div><div class="line"># NCCL acceleration switch (uncomment to build with NCCL)</div><div class="line"># https://github.com/NVIDIA/nccl (last tested version: v1.2.3-1+cuda8.0)</div><div class="line"># USE_NCCL := 1</div><div class="line"></div><div class="line"># Uncomment to use `pkg-config` to specify OpenCV library paths.</div><div class="line"># (Usually not necessary -- OpenCV libraries are normally installed in one of the above $LIBRARY_DIRS.)</div><div class="line"># USE_PKG_CONFIG := 1</div><div class="line"></div><div class="line"># N.B. both build and distribute dirs are cleared on `make clean`</div><div class="line">BUILD_DIR := build</div><div class="line">DISTRIBUTE_DIR := distribute</div><div class="line"></div><div class="line"># Uncomment for debugging. Does not work on OSX due to https://github.com/BVLC/caffe/issues/171</div><div class="line"># DEBUG := 1</div><div class="line"></div><div class="line"># The ID of the GPU that &apos;make runtest&apos; will use to run unit tests.</div><div class="line">TEST_GPUID := 0</div><div class="line"></div><div class="line"># enable pretty build (comment to see full commands)</div><div class="line">Q ?= @</div></pre></td></tr></table></figure></p>
+<p>配置好Makefile.config文件，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make -j8 &amp;&amp; make pycaffe</div></pre></td></tr></table></figure></p>
+<p>编译caffe时报错memcpy在此作用域中尚未声明,如下：<br><img src="/images/frcnn-caffe-compile-error-gcc.png" alt=""></p>
+<p>这可能是GCC的版本太高了，我们需要在makefile修改NVCCFLAGS变量，来强制将GCC的版本降低:<br><img src="/images/frcnn-caffe-compile-error-gcc-version.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)</div></pre></td></tr></table></figure>
+<h2 id="处理思路"><a href="#处理思路" class="headerlink" title="处理思路"></a>处理思路</h2><p>使用自己定制的数据集训练Faster-RCNN模型，一般有两种思路：其一，修改Faster-RCNN代码,适合自己的数据集；其二，将自己的数据集格式改为VOC2007形式的数据集。从工作量上看，无疑后者更加容易一些（下面的例子采取第二种方法）。</p>
+<ol>
+<li>图片的命名格式<br>虽然图片的命名理论上不会影响训练。因为训练的数据都是从txt文件中读取图片的名称。但是为了统一数据集，仍然建议批量、有规律的命名数据图片。</li>
+<li><p>VOC格式的数据集格式<br>VOC格式的数据集格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---VOC2007</div><div class="line">------Annotations</div><div class="line">------ImagesSet</div><div class="line">---------Main</div><div class="line">------JPEGImages</div></pre></td></tr></table></figure>
+</li>
+<li><p>Main中的四个txt文件<br>txt内容即是图片名字，所以遍历一遍JPEGImages或者Annotations都行.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">test.txt是测试集，大概是整个数据集的50%；</div><div class="line">trainval是训练和验证数据集，也就是整个数据集的剩余的50%</div><div class="line">train.txt是训练集，是trainval的50%</div><div class="line">val.txt是验证集，trainval剩余的50%</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><p>从最原始的Faster-RCNN来看，VOC2007格式的数据格式如下所示：<br><img src="/images/voc2007-folder.png" alt=""></p>
+<p>Annotations中存在的是.xml文件，文件中记录描述每张图的ground truth信息,如下所示：<br><img src="/images/annotations-sample-xml.png" alt=""></p>
+<p>每个xml文件的内容具体如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;annotation&gt;</div><div class="line">	&lt;folder&gt;shoe&lt;/folder&gt;</div><div class="line">	&lt;filename&gt;shoe-001.jpg&lt;/filename&gt;</div><div class="line">	&lt;path&gt;/home/xiningwang/Downloads/shoe/shoe-001.jpg&lt;/path&gt;</div><div class="line">	&lt;source&gt;</div><div class="line">		&lt;database&gt;Unknown&lt;/database&gt;</div><div class="line">	&lt;/source&gt;</div><div class="line">	&lt;size&gt;</div><div class="line">		&lt;width&gt;1000&lt;/width&gt;</div><div class="line">		&lt;height&gt;1000&lt;/height&gt;</div><div class="line">		&lt;depth&gt;3&lt;/depth&gt;</div><div class="line">	&lt;/size&gt;</div><div class="line">	&lt;segmented&gt;0&lt;/segmented&gt;</div><div class="line">	&lt;object&gt;</div><div class="line">		&lt;name&gt;shoe&lt;/name&gt;</div><div class="line">		&lt;pose&gt;Unspecified&lt;/pose&gt;</div><div class="line">		&lt;truncated&gt;0&lt;/truncated&gt;</div><div class="line">		&lt;difficult&gt;0&lt;/difficult&gt;</div><div class="line">		&lt;bndbox&gt;</div><div class="line">			&lt;xmin&gt;44&lt;/xmin&gt;</div><div class="line">			&lt;ymin&gt;150&lt;/ymin&gt;</div><div class="line">			&lt;xmax&gt;975&lt;/xmax&gt;</div><div class="line">			&lt;ymax&gt;842&lt;/ymax&gt;</div><div class="line">		&lt;/bndbox&gt;</div><div class="line">	&lt;/object&gt;</div><div class="line">&lt;/annotation&gt;</div></pre></td></tr></table></figure></p>
+<p>ImageSets/Main存放的是test.txt、trainval.txt、train.txt、val.txt。 其中，test.txt是测试集，大概占整个数据集的20%；trainval.txt是训练集和验证集的组合，也就是整个数据集剩下的80%；train.txt是训练集，是trainval.txt的90%；val.txt是验证集，是trainval.txt的10%。</p>
+<p>每个TXT文件的内容都是相应图片的前缀（去掉后缀.jpg），如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">handbag-001</div><div class="line">handbag-002</div><div class="line">handbag-003</div><div class="line">handbag-004</div><div class="line">handbag-005</div><div class="line">handbag-006</div><div class="line">handbag-007</div><div class="line">handbag-008</div><div class="line">handbag-009</div><div class="line">handbag-010</div><div class="line">handbag-011</div><div class="line">handbag-012</div><div class="line">shoe-001</div><div class="line">shoe-002</div><div class="line">shoe-003</div><div class="line">shoe-004</div><div class="line">shoe-005</div><div class="line">shoe-006</div><div class="line">shoe-007</div><div class="line">shoe-008</div><div class="line">shoe-009</div><div class="line">shoe-010</div><div class="line">shoe-011</div><div class="line">shoe-012</div></pre></td></tr></table></figure></p>
+<p>JPEGImages中存放的是.jpg图片，如下所示：<br><img src="/images/jpegimages-sample.png" alt=""></p>
+<p>到此为止，你可以用自己定制的数据集的Annotations,ImageSets和JPEGImages替换py-faster-rcnn/data/VOCdevkit2007/VOC2007中对应的文件夹。</p>
+<h2 id="修改Faster-RCNN的训练参数"><a href="#修改Faster-RCNN的训练参数" class="headerlink" title="修改Faster-RCNN的训练参数"></a>修改Faster-RCNN的训练参数</h2><h3 id="修改stage1-fast-rcnn-train-pt"><a href="#修改stage1-fast-rcnn-train-pt" class="headerlink" title="修改stage1_fast_rcnn_train.pt"></a>修改stage1_fast_rcnn_train.pt</h3><p>第1步：py-faster-rcnn/models/pascal_voc/ZF/faster_rcnn_alt_opt/stage1_fast_rcnn_train.pt修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &apos;data&apos;  </div><div class="line">  type: &apos;Python&apos;  </div><div class="line">  top: &apos;data&apos;  </div><div class="line">  top: &apos;rois&apos;  </div><div class="line">  top: &apos;labels&apos;  </div><div class="line">  top: &apos;bbox_targets&apos;  </div><div class="line">  top: &apos;bbox_inside_weights&apos;  </div><div class="line">  top: &apos;bbox_outside_weights&apos;  </div><div class="line">  python_param &#123;  </div><div class="line">    module: &apos;roi_data_layer.layer&apos;  </div><div class="line">    layer: &apos;RoIDataLayer&apos;  </div><div class="line">    param_str: &quot;&apos;num_classes&apos;: 3&quot; #按训练集类别改，该值为类别数+1  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &quot;cls_score&quot;  </div><div class="line">  type: &quot;InnerProduct&quot;  </div><div class="line">  bottom: &quot;fc7&quot;  </div><div class="line">  top: &quot;cls_score&quot;  </div><div class="line">  param &#123; lr_mult: 1.0 &#125;  </div><div class="line">  param &#123; lr_mult: 2.0 &#125;  </div><div class="line">  inner_product_param &#123;  </div><div class="line">    num_output: 3 #按训练集类别改，该值为类别数+1  </div><div class="line">    weight_filler &#123;  </div><div class="line">      type: &quot;gaussian&quot;  </div><div class="line">      std: 0.01  </div><div class="line">    &#125;  </div><div class="line">    bias_filler &#123;  </div><div class="line">      type: &quot;constant&quot;  </div><div class="line">      value: 0  </div><div class="line">    &#125;  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &quot;bbox_pred&quot;  </div><div class="line">  type: &quot;InnerProduct&quot;  </div><div class="line">  bottom: &quot;fc7&quot;  </div><div class="line">  top: &quot;bbox_pred&quot;  </div><div class="line">  param &#123; lr_mult: 1.0 &#125;  </div><div class="line">  param &#123; lr_mult: 2.0 &#125;  </div><div class="line">  inner_product_param &#123;  </div><div class="line">    num_output: 12 #按训练集类别改，该值为（类别数+1）*4  </div><div class="line">    weight_filler &#123;  </div><div class="line">      type: &quot;gaussian&quot;  </div><div class="line">      std: 0.001  </div><div class="line">    &#125;  </div><div class="line">    bias_filler &#123;  </div><div class="line">      type: &quot;constant&quot;  </div><div class="line">      value: 0  </div><div class="line">    &#125;  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="修改stage1-rpn-train-pt"><a href="#修改stage1-rpn-train-pt" class="headerlink" title="修改stage1_rpn_train.pt"></a>修改stage1_rpn_train.pt</h3><p>第2步：py-faster-rcnn/models/pascal_voc/ZF/faster_rcnn_alt_opt/stage1_rpn_train.pt修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">    name: &apos;input-data&apos;  </div><div class="line">    type: &apos;Python&apos;  </div><div class="line">    top: &apos;data&apos;  </div><div class="line">    top: &apos;im_info&apos;  </div><div class="line">    top: &apos;gt_boxes&apos;  </div><div class="line">    python_param &#123;  </div><div class="line">        module: &apos;roi_data_layer.layer&apos;  </div><div class="line">        layer: &apos;RoIDataLayer&apos;  </div><div class="line">        param_str: &quot;&apos;num_classes&apos;: 3&quot; #按训练集类别改，该值为类别数+1  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="修改stage2-fast-rcnn-train-pt"><a href="#修改stage2-fast-rcnn-train-pt" class="headerlink" title="修改stage2_fast_rcnn_train.pt"></a>修改stage2_fast_rcnn_train.pt</h3><p>第3步：py-faster-rcnn/models/pascal_voc/ZF/faster_rcnn_alt_opt/stage2_fast_rcnn_train.pt修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &apos;data&apos;  </div><div class="line">  type: &apos;Python&apos;  </div><div class="line">  top: &apos;data&apos;  </div><div class="line">  top: &apos;rois&apos;  </div><div class="line">  top: &apos;labels&apos;  </div><div class="line">  top: &apos;bbox_targets&apos;  </div><div class="line">  top: &apos;bbox_inside_weights&apos;  </div><div class="line">  top: &apos;bbox_outside_weights&apos;  </div><div class="line">  python_param &#123;  </div><div class="line">    module: &apos;roi_data_layer.layer&apos;  </div><div class="line">    layer: &apos;RoIDataLayer&apos;  </div><div class="line">    param_str: &quot;&apos;num_classes&apos;: 3&quot; #按训练集类别改，该值为类别数+1  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &quot;cls_score&quot;  </div><div class="line">  type: &quot;InnerProduct&quot;  </div><div class="line">  bottom: &quot;fc7&quot;  </div><div class="line">  top: &quot;cls_score&quot;  </div><div class="line">  param &#123; lr_mult: 1.0 &#125;  </div><div class="line">  param &#123; lr_mult: 2.0 &#125;  </div><div class="line">  inner_product_param &#123;  </div><div class="line">    num_output: 3 #按训练集类别改，该值为类别数+1  </div><div class="line">    weight_filler &#123;  </div><div class="line">      type: &quot;gaussian&quot;  </div><div class="line">      std: 0.01  </div><div class="line">    &#125;  </div><div class="line">    bias_filler &#123;  </div><div class="line">      type: &quot;constant&quot;  </div><div class="line">      value: 0  </div><div class="line">    &#125;  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &quot;bbox_pred&quot;  </div><div class="line">  type: &quot;InnerProduct&quot;  </div><div class="line">  bottom: &quot;fc7&quot;  </div><div class="line">  top: &quot;bbox_pred&quot;  </div><div class="line">  param &#123; lr_mult: 1.0 &#125;  </div><div class="line">  param &#123; lr_mult: 2.0 &#125;  </div><div class="line">  inner_product_param &#123;  </div><div class="line">    num_output: 12 #按训练集类别改，该值为（类别数+1）*4  </div><div class="line">    weight_filler &#123;  </div><div class="line">      type: &quot;gaussian&quot;  </div><div class="line">      std: 0.001  </div><div class="line">    &#125;  </div><div class="line">    bias_filler &#123;  </div><div class="line">      type: &quot;constant&quot;  </div><div class="line">      value: 0  </div><div class="line">    &#125;  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="修改stage2-rpn-train-pt"><a href="#修改stage2-rpn-train-pt" class="headerlink" title="修改stage2_rpn_train.pt"></a>修改stage2_rpn_train.pt</h3><p>第4步：py-faster-rcnn/models/pascal_voc/ZF/faster_rcnn_alt_opt/stage2_rpn_train.pt修改:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &apos;input-data&apos;  </div><div class="line">  type: &apos;Python&apos;  </div><div class="line">  top: &apos;data&apos;  </div><div class="line">  top: &apos;im_info&apos;  </div><div class="line">  top: &apos;gt_boxes&apos;  </div><div class="line">  python_param &#123;  </div><div class="line">    module: &apos;roi_data_layer.layer&apos;  </div><div class="line">    layer: &apos;RoIDataLayer&apos;  </div><div class="line">    param_str: &quot;&apos;num_classes&apos;: 3&quot; #按训练集类别改，该值为类别数+1  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="修改faster-rcnn-test-pt"><a href="#修改faster-rcnn-test-pt" class="headerlink" title="修改faster_rcnn_test.pt"></a>修改faster_rcnn_test.pt</h3><p>第5步：py-faster-rcnn/models/pascal_voc/ZF/faster_rcnn_alt_opt/faster_rcnn_test.pt修改:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &quot;cls_score&quot;  </div><div class="line">  type: &quot;InnerProduct&quot;  </div><div class="line">  bottom: &quot;fc7&quot;  </div><div class="line">  top: &quot;cls_score&quot;  </div><div class="line">  inner_product_param &#123;  </div><div class="line">    num_output: 3 #按训练集类别改，该值为类别数+1  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">layer &#123;  </div><div class="line">  name: &quot;bbox_pred&quot;  </div><div class="line">  type: &quot;InnerProduct&quot;  </div><div class="line">  bottom: &quot;fc7&quot;  </div><div class="line">  top: &quot;bbox_pred&quot;  </div><div class="line">  inner_product_param &#123;  </div><div class="line">    num_output: 12 #按训练集类别改，该值为（类别数+1）*4  </div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="修改pascal-voc-py"><a href="#修改pascal-voc-py" class="headerlink" title="修改pascal_voc.py"></a>修改pascal_voc.py</h3><p>  第6步：py-faster-rcnn/lib/datasets/pascal_voc.py修改:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">class pascal_voc(imdb):  </div><div class="line">def __init__(self, image_set, year, devkit_path=None):  </div><div class="line">    imdb.__init__(self, &apos;voc_&apos; + year + &apos;_&apos; + image_set)  </div><div class="line">    self._year = year  </div><div class="line">    self._image_set = image_set  </div><div class="line">    self._devkit_path = self._get_default_path() if devkit_path is None \  </div><div class="line">                        else devkit_path  </div><div class="line">    self._data_path = os.path.join(self._devkit_path, &apos;VOC&apos; + self._year)  </div><div class="line">    self._classes = (&apos;__background__&apos;, # always index 0  </div><div class="line">                     &apos;你的标签1&apos;,&apos;你的标签2&apos;)</div></pre></td></tr></table></figure></p>
+<h3 id="修改pascal-voc-py-1"><a href="#修改pascal-voc-py-1" class="headerlink" title="修改pascal_voc.py"></a>修改pascal_voc.py</h3><p>第7步：修改lib/datasets/pascal_voc.py的_load_pascal_annotation()函数:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line">def _load_pascal_annotation(self, index):</div><div class="line">    &quot;&quot;&quot;</div><div class="line">    Load image and bounding boxes info from XML file in the PASCAL VOC</div><div class="line">    format.</div><div class="line">    &quot;&quot;&quot;</div><div class="line">    filename = os.path.join(self._data_path, &apos;Annotations&apos;, index + &apos;.xml&apos;)</div><div class="line">    tree = ET.parse(filename)</div><div class="line">    objs = tree.findall(&apos;object&apos;)</div><div class="line">    if not self.config[&apos;use_diff&apos;]:</div><div class="line">        # Exclude the samples labeled as difficult</div><div class="line">        non_diff_objs = [</div><div class="line">            obj for obj in objs if int(obj.find(&apos;difficult&apos;).text) == 0]</div><div class="line">        # if len(non_diff_objs) != len(objs):</div><div class="line">        #     print &apos;Removed &#123;&#125; difficult objects&apos;.format(</div><div class="line">        #         len(objs) - len(non_diff_objs))</div><div class="line">        objs = non_diff_objs</div><div class="line">    num_objs = len(objs)</div><div class="line">    boxes = np.zeros((num_objs, 4), dtype=np.uint16)</div><div class="line">    gt_classes = np.zeros((num_objs), dtype=np.int32)</div><div class="line">    overlaps = np.zeros((num_objs, self.num_classes), dtype=np.float32)</div><div class="line">    # &quot;Seg&quot; area for pascal is just the box area</div><div class="line">    seg_areas = np.zeros((num_objs), dtype=np.float32)</div><div class="line">    # Load object bounding boxes into a data frame.</div><div class="line">    for ix, obj in enumerate(objs):</div><div class="line">        bbox = obj.find(&apos;bndbox&apos;)</div><div class="line">        # Make pixel indexes 0-based</div><div class="line">        # x1 = float(bbox.find(&apos;xmin&apos;).text) - 1</div><div class="line">        # y1 = float(bbox.find(&apos;ymin&apos;).text) - 1</div><div class="line">        # x2 = float(bbox.find(&apos;xmax&apos;).text) - 1</div><div class="line">        # y2 = float(bbox.find(&apos;ymax&apos;).text) - 1</div><div class="line">        ### 因为标注过程中，可能存在标注的目标框太靠近边缘或者自己没注意，导致标注的数据在训练时产生了异常</div><div class="line">        x1 = float(bbox.find(&apos;xmin&apos;).text)</div><div class="line">        y1 = float(bbox.find(&apos;ymin&apos;).text)</div><div class="line">        x2 = float(bbox.find(&apos;xmax&apos;).text)</div><div class="line">        y2 = float(bbox.find(&apos;ymax&apos;).text)</div><div class="line">        cls = self._class_to_ind[obj.find(&apos;name&apos;).text.lower().strip()]</div><div class="line">        boxes[ix, :] = [x1, y1, x2, y2]</div><div class="line">        gt_classes[ix] = cls</div><div class="line">        overlaps[ix, cls] = 1.0</div><div class="line">        seg_areas[ix] = (x2 - x1 + 1) * (y2 - y1 + 1)</div><div class="line">    overlaps = scipy.sparse.csr_matrix(overlaps)</div><div class="line">    return &#123;&apos;boxes&apos; : boxes,</div><div class="line">            &apos;gt_classes&apos;: gt_classes,</div><div class="line">            &apos;gt_overlaps&apos; : overlaps,</div><div class="line">            &apos;flipped&apos; : False,</div><div class="line">            &apos;seg_areas&apos; : seg_areas&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="修改学习率"><a href="#修改学习率" class="headerlink" title="修改学习率"></a>修改学习率</h3><p>第8步：学习率可以在py-faster-rcnn/models/pascal_voc/ZF/faster_rcnn_alt_opt中的solve文件设置；</p>
+<h3 id="修改迭代次数"><a href="#修改迭代次数" class="headerlink" title="修改迭代次数"></a>修改迭代次数</h3><p>第9步：迭代次数可以在py-faster-rcnn/tools的train_faster_rcnn_alt_opt.py中修改。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">max_iters = [80000, 40000, 80000, 40000]</div></pre></td></tr></table></figure></p>
+<p>分别为4个阶段（rpn第1阶段，fast-rcnn第1阶段，rpn第2阶段，fast-rcnn第2阶段）的迭代次数。可改成你希望的迭代次数。</p>
+<h2 id="训练模型"><a href="#训练模型" class="headerlink" title="训练模型"></a>训练模型</h2><p>我们采用ZF模型进行训练，输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./experiments/scripts/faster_rcnn_alt_opt.sh 0 ZF pascal_voc</div></pre></td></tr></table></figure></p>
+<h2 id="测试模型"><a href="#测试模型" class="headerlink" title="测试模型"></a>测试模型</h2><p>将训练得到的<strong>py-faster-rcnn/output/faster-rcnn-alt-opt/voc_2007_trainval/ZF_faster_rcnn_final.caffemodel</strong>模型拷贝到<strong>py-faster-rcnn/data/faster/rcnn_model</strong></p>
+<p>修改py-faster-rcnn/tools/demo.py或者新建demo-test.py，具体代码如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># --------------------------------------------------------</div><div class="line"># Faster R-CNN</div><div class="line"># Copyright (c) 2015 Microsoft</div><div class="line"># Licensed under The MIT License [see LICENSE for details]</div><div class="line"># Written by Ross Girshick</div><div class="line"># --------------------------------------------------------</div><div class="line">&quot;&quot;&quot;</div><div class="line">Demo script showing detections in sample images.</div><div class="line">See README.md for installation instructions before running.</div><div class="line">&quot;&quot;&quot;</div><div class="line">import _init_paths</div><div class="line">from fast_rcnn.config import cfg</div><div class="line">from fast_rcnn.test import im_detect</div><div class="line">from fast_rcnn.nms_wrapper import nms</div><div class="line">from utils.timer import Timer</div><div class="line">import matplotlib.pyplot as plt</div><div class="line">import numpy as np</div><div class="line">import scipy.io as sio</div><div class="line">import caffe, os, sys, cv2</div><div class="line">import argparse</div><div class="line">import shutil</div><div class="line">CLASSES = (&apos;__background__&apos;,</div><div class="line">           &apos;你的标签1&apos;, &apos;你的标&apos;)</div><div class="line">NETS = &#123;&apos;vgg16&apos;: (&apos;VGG16&apos;,</div><div class="line">                  &apos;VGG16_faster_rcnn_final.caffemodel&apos;),</div><div class="line">        &apos;zf&apos;: (&apos;ZF&apos;,</div><div class="line">                  &apos;你的模型名称&apos;)&#125;</div><div class="line">def save_det(im, class_name, dets, thresh=0.5):</div><div class="line">    &quot;&quot;&quot;Save results with bounding boxes.&quot;&quot;&quot;</div><div class="line">    inds = np.where(dets[:, -1] &gt;= thresh)[0]</div><div class="line">    if len(inds) == 0:</div><div class="line">        print &quot;ERROR: none bounding box!&quot;</div><div class="line">        return im</div><div class="line">    font = cv2.FONT_HERSHEY_SIMPLEX</div><div class="line">    for i in inds:</div><div class="line">        bbox = dets[i, :4]</div><div class="line">        rect_start = (bbox[0], bbox[1])</div><div class="line">        rect_end = (bbox[2], bbox[3])</div><div class="line">        color = (0, 255, 0)</div><div class="line">        cv2.rectangle(im, rect_start, rect_end, color, 1, 0)</div><div class="line">        cv2.putText(im, class_name, (bbox[0], bbox[1]), font, 1, (255,0,0), 2, cv2.CV_AA)</div><div class="line">    #cv2.imwrite(&quot;out.jpg&quot;, im)</div><div class="line">    return im</div><div class="line">def test(net, input_images, output_images):</div><div class="line">    &quot;&quot;&quot;Save test images with bounding boxes&quot;&quot;&quot;</div><div class="line">    for (input_image, output_image) in zip(input_images, output_images):</div><div class="line">        if not os.path.exists(input_image):</div><div class="line">            print &quot;ERROR: file is not existed!\n&quot;</div><div class="line">            exit(-1)</div><div class="line">        print &quot;input_image = &quot; + input_image</div><div class="line">        im = cv2.imread(input_image)</div><div class="line">        # Detect all object classes and regress object bounds</div><div class="line">        scores,boxes = im_detect(net, im)</div><div class="line">        # Save detections for each class</div><div class="line">        CONF_THRESH = 0.8</div><div class="line">        NMS_THRESH = 0.3</div><div class="line">        for cls_ind, cls in enumerate(CLASSES[1:]):</div><div class="line">        cls_ind += 1 # because we skipped background</div><div class="line">        cls_boxes = boxes[:, 4*cls_ind : 4*(cls_ind + 1)]</div><div class="line">        cls_scores = scores[:, cls_ind]</div><div class="line">        dets = np.hstack((cls_boxes, cls_scores[:, np.newaxis])).astype(np.float32)</div><div class="line">        keep = nms(dets, NMS_THRESH)</div><div class="line">        dets = dets[keep, :]</div><div class="line">        im = save_det(im, cls, dets, thresh=CONF_THRESH)</div><div class="line">        cv2.imwrite(output_image, im)</div><div class="line">        print &quot;output_image = &quot; + output_image</div><div class="line">def gen_test_image_list(list_file, input_root, output_root):</div><div class="line">    &quot;&quot;&quot;Generate test image lists&quot;&quot;&quot;</div><div class="line">    open_file = open(list_file, &apos;r&apos;)</div><div class="line">    input_images = []</div><div class="line">    output_images = []</div><div class="line">    for image_prefix in open_file.readlines():</div><div class="line">        image_prefix = image_prefix.strip()</div><div class="line">        input_image = os.path.join(input_root, image_prefix + &quot;.jpg&quot;)</div><div class="line">    output_image = os.path.join(output_root, &quot;result_&quot; + image_prefix + &quot;.jpg&quot;)</div><div class="line">    input_images.append(input_image)</div><div class="line">    output_images.append(output_image)</div><div class="line">    return (input_images, output_images)</div><div class="line">def parse_args():</div><div class="line">    &quot;&quot;&quot;Parse input arguments.&quot;&quot;&quot;</div><div class="line">    parser = argparse.ArgumentParser(description=&apos;Faster R-CNN demo&apos;)</div><div class="line">    parser.add_argument(&apos;--gpu&apos;, dest=&apos;gpu_id&apos;, help=&apos;GPU device id to use [0]&apos;,</div><div class="line">                        default=0, type=int)</div><div class="line">    parser.add_argument(&apos;--cpu&apos;, dest=&apos;cpu_mode&apos;,</div><div class="line">                        help=&apos;Use CPU mode (overrides --gpu)&apos;,</div><div class="line">                        action=&apos;store_true&apos;)</div><div class="line">    parser.add_argument(&apos;--net&apos;, dest=&apos;demo_net&apos;, help=&apos;Network to use [vgg16]&apos;,</div><div class="line">                        choices=NETS.keys(), default=&apos;vgg16&apos;)</div><div class="line">    args = parser.parse_args()</div><div class="line">    return args</div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    cfg.TEST.HAS_RPN = True  # Use RPN for proposals</div><div class="line">    args = parse_args()</div><div class="line">    prototxt = os.path.join(cfg.MODELS_DIR, NETS[args.demo_net][0],</div><div class="line">                            &apos;faster_rcnn_alt_opt&apos;, &apos;faster_rcnn_test.pt&apos;)</div><div class="line">    caffemodel = os.path.join(cfg.DATA_DIR, &apos;faster_rcnn_models&apos;,</div><div class="line">                              NETS[args.demo_net][1])</div><div class="line">    if not os.path.isfile(caffemodel):</div><div class="line">        raise IOError((&apos;&#123;:s&#125; not found.\nDid you run ./data/script/&apos;</div><div class="line">                       &apos;fetch_faster_rcnn_models.sh?&apos;).format(caffemodel))</div><div class="line">    if args.cpu_mode:</div><div class="line">        caffe.set_mode_cpu()</div><div class="line">    else:</div><div class="line">        caffe.set_mode_gpu()</div><div class="line">        caffe.set_device(args.gpu_id)</div><div class="line">        cfg.GPU_ID = args.gpu_id</div><div class="line">    net = caffe.Net(prototxt, caffemodel, caffe.TEST)</div><div class="line">    print &apos;\n\nLoaded network &#123;:s&#125;&apos;.format(caffemodel)</div><div class="line">    VOC_ROOT = os.path.join(cfg.DATA_DIR, &quot;VOCdevkit2007&quot;, &quot;VOC2007&quot;)</div><div class="line">    list_file = os.path.join(VOC_ROOT, &quot;ImageSets&quot;, &quot;Main&quot;, &quot;test.txt&quot;)</div><div class="line">    input_root = os.path.join(VOC_ROOT, &quot;JPEGImages&quot;)</div><div class="line">    output_root = os.path.join(VOC_ROOT, &quot;TestResults&quot;)</div><div class="line">    if os.path.exists(output_root):</div><div class="line">        shutil.rmtree(output_root)</div><div class="line">    os.mkdir(output_root)</div><div class="line">    input_images, output_images = gen_test_image_list(list_file, input_root, output_root)</div><div class="line">    test(net, input_images, output_images)</div></pre></td></tr></table></figure></p>
+<p>输入测试命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./tools/demo-test.py --net zf</div></pre></td></tr></table></figure></p>
+<p>测试的结果保存到<strong>py-faster-rcnn/data/VOCdevkit2007/VOC2007/TestResults</strong>.</p>
+<h2 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h2><ol>
+<li>‘assert（boxes[:,2]&gt;=boxes[:,0]）.all() issue<br>出现问题：训练faster rcnn时出现如下报错：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">File &quot;/py-faster-rcnn/tools/../lib/datasets/imdb.py&quot;, line 108, in append_flipped_images</div><div class="line">    assert (boxes[:, 2] &gt;= boxes[:, 0]).all()</div><div class="line">AssertionError</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>检查自己数据发现，左上角坐标（x,y）可能为0，或标定区域溢出图片.<br>而faster rcnn会对Xmin,Ymin,Xmax,Ymax进行减一操作, 如果Xmin为0，减一后变为65535<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Make pixel indexes 0-based</div><div class="line">        # x1 = float(bbox.find(&apos;xmin&apos;).text) - 1</div><div class="line">        # y1 = float(bbox.find(&apos;ymin&apos;).text) - 1</div><div class="line">        # x2 = float(bbox.find(&apos;xmax&apos;).text) - 1</div><div class="line">        # y2 = float(bbox.find(&apos;ymax&apos;).text) - 1</div></pre></td></tr></table></figure></p>
+<p>问题解决:<br>1、修改lib/datasets/imdb.py，append_flipped_images()函数<br>数据整理，在一行代码为 boxes[:, 2] = widths[i] - oldx1 - 1下加入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for b in range(len(boxes)):</div><div class="line">  if boxes[b][2]&lt; boxes[b][0]:</div><div class="line">    boxes[b][0] = 0</div></pre></td></tr></table></figure></p>
+<p>2、修改lib/datasets/pascal_voc.py, load_pascal_annotation(,)函数将对Xmin,Ymin,Xmax,Ymax减一去掉.</p>
+<p>3、（可选，如果1和2可以解决问题，就没必要用3）修改lib/fast_rcnn/config.py，不使图片实现翻转，如下改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Use horizontally-flipped images during training?</div><div class="line">__C.TRAIN.USE_FLIPPED = False</div></pre></td></tr></table></figure></p>
+<ol>
+<li>‘max_overlaps’ issue<br>使用自己数据集训练Faster-RCNN模型时，如果出现’max_overlaps’ issue， 极有可能是因为之前训练时出现错误，但pkl文件仍在cache中。所以解决的方法是删除在py-faster-rcnn/data/cache目录下的pkl文件。</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/chatterbot-iot/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/chatterbot-iot/" itemprop="url">
+                  Applying Chatbots to the Internet of Things
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-30T10:46:25+08:00">
+                2017-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/IOT/" itemprop="url" rel="index">
+                    <span itemprop="name">IOT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/chatterbot-iot/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="chatterbot-iot/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Applying-Chatbots-to-the-Internet-of-Things"><a href="#Applying-Chatbots-to-the-Internet-of-Things" class="headerlink" title="Applying Chatbots to the Internet of Things"></a>Applying Chatbots to the Internet of Things</h2><p><a href="/files/applying-chatbots-into-iot.pdf">Applying Chatbots to the Internet of Things</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/sklearn-classifier/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/sklearn-classifier/" itemprop="url">
+                  在使用sklearn时如何选择合适的分类器
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-17T10:46:25+08:00">
+                2017-09-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/sklearn-classifier/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="sklearn-classifier/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="选择合适的机器学习算法"><a href="#选择合适的机器学习算法" class="headerlink" title="选择合适的机器学习算法"></a>选择合适的机器学习算法</h2><p>All models are wrong, but some models are useful. — George Box (Box and Draper 1987)</p>
+<p>根据No free lunch theorem，在机器学习中，不存在一个在各方面都最好的模型/算法，因为每一个模型都或多或少地对数据分布有先验的统计假设。取所有可能的数据分布的平均，每个模型的表现都一样好（或者一样糟糕）。因此，我们需要针对具体的问题，找到最好的机器学习算法。</p>
+<p><img src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/master/doc/images/ml_map.png" alt=""></p>
+<p>下面是可能的效果图：<br><img src="/images/sklearn-classifier-sample.png" alt=""></p>
+<h2 id="数据分析（Exploratory-Data-Analysis）"><a href="#数据分析（Exploratory-Data-Analysis）" class="headerlink" title="数据分析（Exploratory Data Analysis）"></a>数据分析（Exploratory Data Analysis）</h2><p>在选择具体的算法之前，最好对数据中每一个特征的模式和产生原理有一定的了解：</p>
+<ul>
+<li>特征是连续的（real-valued）还是离散的（discrete）？</li>
+<li>如果特征是连续的，它的直方图（histogram）长什么样？它的mean和variance是如何分布的？</li>
+<li>如果特征是离散的，不同的特征值之间是否存在某种顺序关系？例如，豆瓣上从1星到5星的打分，虽然是离散数据，但有一个从低到高的顺序。如果某个特征是“地址”，则不太可能存在一个明确的顺序。</li>
+<li>特征数据是如何被采集的？</li>
+</ul>
+<h2 id="特征工程（Feature-Engineering）"><a href="#特征工程（Feature-Engineering）" class="headerlink" title="特征工程（Feature Engineering）"></a>特征工程（Feature Engineering）</h2><p>特征工程（根据现有的特征，制造出新的、有价值的特征）决定了机器学习能力的上限，各种算法不过是在逼近这个上限而已。不同的机器学习算法一般会有其对应的不同的特征工程。在实践中，特征工程、调整算法参数这两个步骤常常往复进行。</p>
+<h2 id="由简至繁：具体算法的选择"><a href="#由简至繁：具体算法的选择" class="headerlink" title="由简至繁：具体算法的选择"></a>由简至繁：具体算法的选择</h2><p>sklearn包括了众多机器学习算法。为了简化问题，在此只讨论几大类常见的分类器、回归器。至于算法的原理，sklearn的文档中往往有每个算法的参考文献，机器学习的课本也都有所涉及。</p>
+<h3 id="General-Linear-Models"><a href="#General-Linear-Models" class="headerlink" title="General Linear Models"></a>General Linear Models</h3><p>最开始建立模型时，我个人一般会选择high bias, low variance的线性模型。线性模型的优点包括计算量小、速度快、不太占内存、不容易过拟合。</p>
+<p>常用线性回归器的有Ridge（含有L2正则化的线性回归）和Lasso（含有L1正则化的线性回归，自带特征选择，可以获得sparse coefficients）。同时，如果对于超参数没有什么特别细致的要求，那么可以使用sklearn提供的RidgeCV和LassoCV，自动通过高效的交叉验证来确定超参数的值。</p>
+<p>假如针对同一个数据集X（m samples <em> n features），需要预测的y值不止一个（m samples </em> n targets），则可以使用multitask的模型。</p>
+<p>线性分类器中，最好用的是LogisticRegression和相应的LogisticRegressionCV。</p>
+<p>SGDClassifier和SGDRegressor可以用于极大的数据集。然而，如果数据集过大的话，最好从数据中取样，然后和小数据一样分析建模，未必一开始就要在整个数据集上跑算法。</p>
+<h3 id="Ensemble-Methods"><a href="#Ensemble-Methods" class="headerlink" title="Ensemble Methods"></a>Ensemble Methods</h3><p>ensemble能够极大提升各种算法，尤其是决策树的表现。在实际应用中，单独决策树几乎不会被使用。Bagging（如RandomForest）通过在数据的不同部分训练一群high variance算法来降低算法们整体的variance；boosting通过依次建立high bias算法来提升整体的variance。</p>
+<p>最常用的ensemble算法是RandomForest和GradientBoosting。不过，在sklearn之外还有更优秀的gradient boosting算法库：XGBoost和LightGBM。</p>
+<p>BaggingClassifier和VotingClassifier可以作为第二层的meta classifier/regressor，将第一层的算法（如xgboost）作为base estimator，进一步做成bagging或者stacking。</p>
+<h3 id="支持向量机（SVM）"><a href="#支持向量机（SVM）" class="headerlink" title="支持向量机（SVM）"></a>支持向量机（SVM）</h3><p>SVM相关的知识可以参考Andrew Ng教授在Coursera上的CS229（有能力的可以去看youtube或者网易公开课上的原版CS229）。svm的API文档很完善，当一个调包侠也没有太大困难。不过在大多数的数据挖掘竞赛（如kaggle）中，SVM的表现往往不如xgboost。</p>
+<h3 id="神经网络（Neural-Network）"><a href="#神经网络（Neural-Network）" class="headerlink" title="神经网络（Neural Network）"></a>神经网络（Neural Network）</h3><p>相比业内顶尖的神经网络库（如TensorFlow和Theano），sklearn的神经网络显得比较简单。个人而言，如果要使用神经网络进行分类/回归，我一般会使用keras或者pytorch。</p>
+<h2 id="附上sklearn库之各分类算法简单应用"><a href="#附上sklearn库之各分类算法简单应用" class="headerlink" title="附上sklearn库之各分类算法简单应用"></a>附上sklearn库之各分类算法简单应用</h2><h3 id="KNN"><a href="#KNN" class="headerlink" title="KNN"></a>KNN</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">from sklearn.neighbors import KNeighborsClassifier</div><div class="line">import numpy as np</div><div class="line"></div><div class="line"></div><div class="line">def KNN(X,y,XX)：#X,y 分别为训练数据集的数据和标签，XX为测试数据</div><div class="line">    model = KNeighborsClassifier(n_neighbors=10)#默认为5</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX)</div><div class="line">    return predicted</div></pre></td></tr></table></figure>
+<h3 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">from sklearn.svm import SVC</div><div class="line"></div><div class="line">def SVM(X,y,XX):</div><div class="line"></div><div class="line">    model = SVC(c=5.0)</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX)</div><div class="line">    return predicted</div></pre></td></tr></table></figure>
+<h3 id="SVM-Classifier-using-cross-validation"><a href="#SVM-Classifier-using-cross-validation" class="headerlink" title="SVM Classifier using cross validation"></a>SVM Classifier using cross validation</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">def svm_cross_validation(train_x, train_y):    </div><div class="line">    from sklearn.grid_search import GridSearchCV    </div><div class="line">    from sklearn.svm import SVC    </div><div class="line">    model = SVC(kernel=&apos;rbf&apos;, probability=True)    </div><div class="line">    param_grid = &#123;&apos;C&apos;: [1e-3, 1e-2, 1e-1, 1, 10, 100, 1000], &apos;gamma&apos;: [0.001, 0.0001]&#125;    </div><div class="line">    grid_search = GridSearchCV(model, param_grid, n_jobs = 1, verbose=1)    </div><div class="line">    grid_search.fit(train_x, train_y)    </div><div class="line">    best_parameters = grid_search.best_estimator_.get_params()    </div><div class="line">    for para, val in list(best_parameters.items()):    </div><div class="line">        print(para, val)    </div><div class="line">    model = SVC(kernel=&apos;rbf&apos;, C=best_parameters[&apos;C&apos;], gamma=best_parameters[&apos;gamma&apos;], probability=True)    </div><div class="line">    model.fit(train_x, train_y)    </div><div class="line">    return model</div></pre></td></tr></table></figure>
+<h3 id="LR"><a href="#LR" class="headerlink" title="LR"></a>LR</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">from sklearn.linear_model import LogisticRegression</div><div class="line"></div><div class="line">def LR(X,y，XX):</div><div class="line"></div><div class="line">    model = LogisticRegression()</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX)</div><div class="line">    return predicted</div></pre></td></tr></table></figure>
+<h3 id="决策树（CART）"><a href="#决策树（CART）" class="headerlink" title="决策树（CART）"></a>决策树（CART）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">from sklearn.tree import DecisionTreeClassifier</div><div class="line"></div><div class="line">def CTRA(X,y,XX):</div><div class="line">    model = DecisionTreeClassifier()</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX)</div><div class="line">    return predicted</div></pre></td></tr></table></figure>
+<h3 id="随机森林"><a href="#随机森林" class="headerlink" title="随机森林"></a>随机森林</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">from sklearn.ensemble import RandomForestClassifier</div><div class="line"></div><div class="line">def CTRA(X,y,XX):</div><div class="line">    model = RandomForestClassifier()</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX)</div><div class="line">    return predicted</div></pre></td></tr></table></figure>
+<h3 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h3><p>(Gradient Boosting Decision Tree)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">from sklearn.ensemble import GradientBoostingClassifier   </div><div class="line"></div><div class="line">def CTRA(X,y,XX):</div><div class="line">    model = GradientBoostingClassifier()</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX)</div><div class="line">    return predicted</div></pre></td></tr></table></figure></p>
+<h3 id="朴素贝叶斯"><a href="#朴素贝叶斯" class="headerlink" title="朴素贝叶斯"></a>朴素贝叶斯</h3><p>一个是基于高斯分布求概率，一个是基于多项式分布求概率，一个是基于伯努利分布求概率。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">from sklearn.naive_bayes import GaussianNB</div><div class="line">from sklearn.naive_bayes import MultinomialNB</div><div class="line">from sklearn.naive_bayes import BernoulliNB</div><div class="line"></div><div class="line">def GNB(X,y,XX):</div><div class="line">    model =GaussianNB()</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX)</div><div class="line">    return predicted</div><div class="line"></div><div class="line">def MNB(X,y,XX):</div><div class="line">    model = MultinomialNB()</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX</div><div class="line">    return predicted</div><div class="line"></div><div class="line">def BNB(X,y,XX):</div><div class="line">    model = BernoulliNB()</div><div class="line">    model.fit(X,y)</div><div class="line"></div><div class="line">    predicted = model.predict(XX</div><div class="line">    return predicted</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/chatterbot/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/chatterbot/" itemprop="url">
+                  构建自己的聊天机器人（及如何接入微信）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-03T10:46:25+08:00">
+                2017-09-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/IOT/" itemprop="url" rel="index">
+                    <span itemprop="name">IOT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/chatterbot/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="chatterbot/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Chatbot的开发框架"><a href="#Chatbot的开发框架" class="headerlink" title="Chatbot的开发框架"></a>Chatbot的开发框架</h2><p>目前聊天机器人的云服务在各大公司中都有自己的框架，例如Facebook, 微软, Google以及IBM的Watson等。开源的框架中，基于机器学习的聊天机器人不多。其中，ChatterBot算是比较简洁（换种说话就是功能还比较弱）的一个，项目活跃, 文档清晰，代码也算干净利落。</p>
+<p>具体说来，ChatterBot是一个基于机器学习的聊天机器人引擎,构建在python上,可以从已有的对话中学习, 该项目的设计允许它接入任何语言。</p>
+<p>其特性：</p>
+<ul>
+<li>一个未经训练的ChatterBot机器人,并没有与用户交谈所需的知识。</li>
+<li>每当用户输入一句话，机器人将存下它，同时也存下答复的句子。 </li>
+<li>随着机器人接受的输入的增加，它能够回答的问题的数量和准确度都会相应提升.</li>
+</ul>
+<p>实现原理：</p>
+<ul>
+<li>首先从已知句子中匹配出与用户输入最相近的句子（如何衡量相近, 大家可以想想）；</li>
+<li>之后找到最有可能的回复，那么如何得出最有可能的回复呢？由所有和机器交流过的人们，对这个输入问题（匹配过的）的各个回答的频率决定；</li>
+</ul>
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h3><ul>
+<li>By default, python3.5.2 is installed in Ubuntu 16.04</li>
+<li>sudo apt-get install -y python3-pip</li>
+<li>pip3 install package_name</li>
+</ul>
+<h3 id="Installing-ChatterBot-from-source"><a href="#Installing-ChatterBot-from-source" class="headerlink" title="Installing ChatterBot from source"></a>Installing ChatterBot from source</h3><ul>
+<li>git clone <a href="https://github.com/gunthercox/ChatterBot.git" target="_blank" rel="external">https://github.com/gunthercox/ChatterBot.git</a></li>
+<li>pip3 install ./ChatterBot</li>
+</ul>
+<h3 id="Checking-the-version-of-ChatterBot-that-you-have-installed"><a href="#Checking-the-version-of-ChatterBot-that-you-have-installed" class="headerlink" title="Checking the version of ChatterBot that you have installed"></a>Checking the version of ChatterBot that you have installed</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">python3 -m chatterbot --version</div><div class="line">0.7.6</div></pre></td></tr></table></figure>
+<p>我用的是当前最新的版本0.7.6。</p>
+<h2 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h2><p>开发第一个入门的机器人例子。</p>
+<p>myfirstchatbot.py</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"># -*- coding: utf-8 -*-</div><div class="line">from chatterbot import ChatBot</div><div class="line">from chatterbot.trainers import ChatterBotCorpusTrainer</div><div class="line"></div><div class="line">chatbot = ChatBot(&quot;ChineseChatbot1&quot;)</div><div class="line">chatbot.set_trainer(ChatterBotCorpusTrainer)</div><div class="line">chatbot.train(&quot;chatterbot.corpus.chinese&quot;)</div><div class="line"></div><div class="line">question = &apos;早上好&apos;</div><div class="line">response = chatbot.get_response(question)</div><div class="line">print(question)</div><div class="line">print(response)</div><div class="line">print(&quot;###########################################&quot;)</div><div class="line">question = &quot;很高兴认识你&quot;</div><div class="line">print(question)</div><div class="line">print(chatbot.get_response(question))</div><div class="line">print(&quot;###########################################&quot;)</div><div class="line">question = &quot;嗨，最近如何?&quot;</div><div class="line">print(question)</div><div class="line">print(chatbot.get_response(question))</div><div class="line">print(&quot;###########################################&quot;)</div><div class="line">question = &quot;复杂优于晦涩&quot;</div><div class="line">print(question)</div><div class="line">print(chatbot.get_response(question))</div><div class="line">print(&quot;###########################################&quot;)</div><div class="line">question = &quot;面对模棱两可，拒绝猜测的诱惑.&quot;</div><div class="line">print(question)</div><div class="line">print(chatbot.get_response(question))</div><div class="line">print(&quot;###########################################&quot;)</div><div class="line">question = &quot;生命、宇宙以及世间万物的终极答案是什么?&quot;</div><div class="line">print(question)</div><div class="line">print(chatbot.get_response(question))</div><div class="line">print(&quot;###########################################&quot;)</div></pre></td></tr></table></figure>
+<p>运行 python3 myfirstchatbot.py, 结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">conversations.yml Training: [####################] 100%</div><div class="line">greetings.yml Training: [####################] 100%</div><div class="line">trivia.yml Training: [####################] 100%</div><div class="line">早上好</div><div class="line">很高兴认识你</div><div class="line">###########################################</div><div class="line">很高兴认识你</div><div class="line">谢谢你。你也一样.</div><div class="line">###########################################</div><div class="line">嗨，最近如何?</div><div class="line">挺好</div><div class="line">###########################################</div><div class="line">复杂优于晦涩</div><div class="line">简单优于复杂.</div><div class="line">###########################################</div><div class="line">面对模棱两可，拒绝猜测的诱惑.</div><div class="line">你似乎很熟悉Python之禅</div><div class="line">###########################################</div><div class="line">生命、宇宙以及世间万物的终极答案是什么?</div><div class="line">你想了解哪方面?</div><div class="line">###########################################</div></pre></td></tr></table></figure>
+<p>需要注意的是：</p>
+<ol>
+<li>中文支持需要使用Python3，中文语料库使用chatterbot.corpus.chinese。</li>
+<li>Chatterbot默认情况下会学习每一次输入，可以通过chatbot = ChatBot(“…”, read_only=True)设置成只读模式。</li>
+</ol>
+<h2 id="API接口"><a href="#API接口" class="headerlink" title="API接口"></a>API接口</h2><p>把聊天机器人封装为api服务，这样它的使用场合就不受限制了，能服务于任何http client。</p>
+<p>另一个原因是，微信接入脚本是python2的，而中文聊天机器人脚本基于python3。</p>
+<h3 id="创建API服务"><a href="#创建API服务" class="headerlink" title="创建API服务"></a>创建API服务</h3><p>使用hug作为API服务的框架，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">安装依赖：pip3 install hug</div></pre></td></tr></table></figure></p>
+<p>创建bot_api.py:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># coding: utf-8</div><div class="line"></div><div class="line">from chatterbot import ChatBot</div><div class="line">from chatterbot.trainers import ChatterBotCorpusTrainer</div><div class="line">import hug</div><div class="line"></div><div class="line"></div><div class="line">weixinchatbot = ChatBot(&quot;weixinchatbot&quot;)</div><div class="line">weixinchatbot.set_trainer(ChatterBotCorpusTrainer)</div><div class="line"># 使用中文语料库训练它</div><div class="line">weixinchatbot.train(&quot;chatterbot.corpus.chinese&quot;)  # 语料库</div><div class="line"></div><div class="line"></div><div class="line">@hug.get()</div><div class="line">def get_response(user_input):</div><div class="line">    response = weixinchatbot.get_response(user_input).text</div><div class="line">    return &#123;&quot;response&quot;:response&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="启动API服务"><a href="#启动API服务" class="headerlink" title="启动API服务"></a>启动API服务</h3><p>运行hug -f bot_api.py：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">xiningwang@ubuntu:~/ChatterBot/examples$ hug -f bot_api.py</div><div class="line">conversations.yml Training: [####################] 100%</div><div class="line">greetings.yml Training: [####################] 100%</div><div class="line">trivia.yml Training: [####################] 100%</div><div class="line"></div><div class="line">/#######################################################################\</div><div class="line">          `.----``..-------..``.----.</div><div class="line">         :/:::::--:---------:--::::://.</div><div class="line">        .+::::----##/-/oo+:-##----:::://</div><div class="line">        `//::-------/oosoo-------::://.       ##    ##  ##    ##    #####</div><div class="line">          .-:------./++o/o-.------::-`   ```  ##    ##  ##    ##  ##</div><div class="line">             `----.-./+o+:..----.     `.:///. ########  ##    ## ##</div><div class="line">   ```        `----.-::::::------  `.-:::://. ##    ##  ##    ## ##   ####</div><div class="line">  ://::--.``` -:``...-----...` `:--::::::-.`  ##    ##  ##   ##   ##    ##</div><div class="line">  :/:::::::::-:-     `````      .:::::-.`     ##    ##    ####     ######</div><div class="line">   ``.--:::::::.                .:::.`</div><div class="line">         ``..::.                .::         EMBRACE THE APIs OF THE FUTURE</div><div class="line">             ::-                .:-</div><div class="line">             -::`               ::-                   VERSION 2.3.1</div><div class="line">             `::-              -::`</div><div class="line">              -::-`           -::-</div><div class="line">\########################################################################/</div><div class="line"></div><div class="line"> Copyright (C) 2016 Timothy Edmund Crosley</div><div class="line"> Under the MIT License</div><div class="line"></div><div class="line"></div><div class="line">Serving on port 8000...</div></pre></td></tr></table></figure></p>
+<h3 id="API服务调用"><a href="#API服务调用" class="headerlink" title="API服务调用"></a>API服务调用</h3><p><img src="/images/chatbot-api-chrome.png" alt=""></p>
+<h2 id="接入微信"><a href="#接入微信" class="headerlink" title="接入微信"></a>接入微信</h2><p>基于wxBot项目，使得用代码与微信交互，这样一来使聊天过程（input/output）可编程，可以让聊天机器人接管我们的聊天。</p>
+<p>wxBot脚本到本地：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://raw.githubusercontent.com/liuwons/wxBot/master/wxbot.py</div></pre></td></tr></table></figure></p>
+<p>创建wechat_bot.py:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># coding: utf-8</div><div class="line"></div><div class="line">from wxbot import WXBot</div><div class="line">import requests</div><div class="line">bot_api=&quot;http://127.0.0.1:8000/get_response&quot;</div><div class="line"></div><div class="line">class MyWXBot(WXBot):</div><div class="line">    def handle_msg_all(self, msg):</div><div class="line">        if msg[&apos;msg_type_id&apos;] == 4 and msg[&apos;content&apos;][&apos;type&apos;] == 0:</div><div class="line">            user_input = msg[&quot;content&quot;][&quot;data&quot;]</div><div class="line">            payload=&#123;&quot;user_input&quot;:user_input&#125;</div><div class="line">            response = requests.get(bot_api,params=payload).json()[&quot;response&quot;]</div><div class="line">            #print(type(response)) # unicode</div><div class="line">            self.send_msg_by_uid(response, msg[&apos;user&apos;][&apos;id&apos;])</div><div class="line"></div><div class="line">def main():</div><div class="line">    bot = MyWXBot()</div><div class="line">    bot.DEBUG = True</div><div class="line">    bot.conf[&apos;qr&apos;] = &apos;png&apos;</div><div class="line">    bot.run()</div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    main()</div></pre></td></tr></table></figure></p>
+<p>安装依赖：pip install requests pyqrcode pypng Pillow</p>
+<p>开始运行(使用python2)：python wechat_bot.py</p>
+<p>之后扫码登录即可</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/ai-nlu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/ai-nlu/" itemprop="url">
+                  IoT - 人工智能
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-19T20:46:25+08:00">
+                2017-08-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI/IOT/" itemprop="url" rel="index">
+                    <span itemprop="name">IOT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/ai-nlu/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="ai-nlu/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="NLU"><a href="#NLU" class="headerlink" title="NLU"></a>NLU</h2><p>rasa NLU is an open source tool for intent classification and entity extraction.</p>
+<p>Rasa Core takes in structured input: intents and entities, button clicks, etc., and decides what your bot should do next.</p>
+<p><img src="https://lastmile-rasa-dm.readthedocs-hosted.com/en/latest/_images/rasa_arch.png" alt=""></p>
+<p>Rather than writing a bunch of if/else statements, a Rasa bot learns from real conversations. A probabilistic model chooses which action to take, and this can be trained using supervised, reinforcement, or interactive learning.</p>
+<h2 id="The-Big-Differences-IoT-Versus-Traditional-System-Data-and-Architecture"><a href="#The-Big-Differences-IoT-Versus-Traditional-System-Data-and-Architecture" class="headerlink" title="The Big Differences: IoT Versus Traditional System Data and Architecture"></a>The Big Differences: IoT Versus Traditional System Data and Architecture</h2><p><img src="https://osswangxining.github.io/images/illustration-iot.svg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>IOT DATA AND ARCHITECTURE</th>
+<th>TRADITIONAL SYSTEM DATA AND ARCHITECTURE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IoT data is distributed.</strong> In any given IoT scenario, data is distributed among devices, sometimes thousands of devices, that are often geographically dispersed. Compute and processing power must often take place on network edges.</td>
+<td><strong>Application data is created and stored centrally.</strong> Each application and system creates and stores its own data. Data from disparate applications is then aggregated and physically moved to a central location, such as an enterprise data warehouse, for analysis.</td>
+</tr>
+<tr>
+<td><strong>IoT data volume is increasing exponentially.</strong> The volume of data in IoT scenarios might start small, but with devices creating data non-stop, 24 hours a day, it doesn’t take long before IoT data volumes become truly massive. This requires a data management and analytics stack that scales to IoT data volumes.</td>
+<td><strong>Traditional application data growth is linear.</strong> Most of the data associated with traditional enterprise applications is created manually. This means the volume of traditional applications data, while growing, is not growing at nearly the pace of machine-generated data. Traditional storage and analytics technologies suffice.</td>
+</tr>
+<tr>
+<td><strong>Real-time and predictive analytics are required on IoT data.</strong> In order to deliver personalized services to customers and adapt equipment operations to maximize efficiencies, IoT data must be analyzed as it is created and be able to trigger corresponding actions.</td>
+<td><strong>Rear-view mirror analytics and reporting hinder teams’ ability to be proactive.</strong> Traditional applications and systems are often monolithic, containing a web of components that capture data but make it difficult to find and troubleshoot issues in real time. Analytics takes place well after data is created and provides largely backwards-looking views of events and operations.</td>
+</tr>
+<tr>
+<td><strong>IoT requires event-driven architecture.</strong> An event-driven architecture takes advantage of microservices and allows applications to notify each other of changes in state as they occur and trigger corresponding actions.</td>
+<td><strong>Traditional architecture is passive.</strong> Traditional application architectures are monolithic and don’t support real-time event notification.</td>
+</tr>
+<tr>
+<td><strong>IoT usage will change.</strong> The one constant in any IoT scenario is change. Data scientists and application developers are always looking for new and innovative IoT use cases, which means they need to continuously adapt existing applications and build new applications using Agile methodologies.</td>
+<td><strong>Application use is fairly static.</strong> Traditional enterprise applications are developed using a waterfall approach to meet existing needs. Applications are rarely updated or changed to meet changing business demands, and new applications take months, sometimes years, to develop and deploy to production.</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/kafkastreams/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/kafkastreams/" itemprop="url">
+                  Kafka Streams
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-11T20:46:25+08:00">
+                2017-06-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Kafka-Streams/" itemprop="url" rel="index">
+                    <span itemprop="name">Kafka Streams</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Kafka-Streams/IOT/" itemprop="url" rel="index">
+                    <span itemprop="name">IOT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/kafkastreams/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="kafkastreams/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Kafka Streams是一个客户端程序库，用于处理和分析存储在Kafka中的数据，并将得到的数据写回Kafka或发送到外部系统。Kafka Stream基于一个重要的流处理概念。如正确的区分事件时间和处理时间，窗口支持，以及简单而有效的应用程序状态管理,并利用kafka的并行模型来透明的处理相同的应用程序作负载平衡。</p>
+<ul>
+<li>一个简单的、轻量级的客户端库，可以很容易地嵌入在任何java应用程序与任何现有应用程序封装集成。</li>
+<li>Kafka本身作为内部消息层，没有外部系统的依赖，使用kafka的分区模型水平扩展处理，并同时保证有序。</li>
+<li>支持本地状态容错，非常快速、高效的状态操作（如join和窗口的聚合）。</li>
+<li>采用一次一个消息处理以实现低延迟，并支持基于事件时间(even-time)的窗口操作。</li>
+<li>提供必要的流处理原语(primitive)，以及一个 高级别的Steram DSL 和 低级别的Processor API。</li>
+</ul>
+<p>以下是几个关键概念的介绍。</p>
+<h3 id="Stream处理拓扑"><a href="#Stream处理拓扑" class="headerlink" title="Stream处理拓扑"></a>Stream处理拓扑</h3><p>流是Kafka Stream提出的最重要的抽象概念：它表示一个无限的，不断更新的数据集。流是一个有序的，可重放（反复的使用），不可变的容错序列，数据记录的格式是键值对（key-value）。通过Kafka Streams编写一个或多个的计算逻辑的处理器拓扑。其中处理器拓扑是一个由流（边缘）连接的流处理（节点）的图。</p>
+<p>流处理器是处理器拓扑中的一个节点；它表示一个处理的步骤，用来转换流中的数据（从拓扑中的上游处理器一次接受一个输入消息，并且随后产生一个或多个输出消息到其下游处理器中）。</p>
+<p><img src="https://kafka.apache.org/0102/images/streams-architecture-topology.jpg" alt=""></p>
+<p>在拓扑中有两个特别的处理器：</p>
+<ul>
+<li>源处理器（Source Processor）：源处理器是一个没有任何上游处理器的特殊类型的流处理器。它从一个或多个kafka主题生成输入流。通过消费这些主题的消息并将它们转发到下游处理器。</li>
+<li>Sink处理器：sink处理器是一个没有下游流处理器的特殊类型的流处理器。它接收上游流处理器的消息发送到一个指定的Kafka主题。</li>
+</ul>
+<h3 id="时间窗口"><a href="#时间窗口" class="headerlink" title="时间窗口"></a>时间窗口</h3><ul>
+<li>事件时间 - 当一个事件或数据记录发生的时间点，就是最初创建的“源头”。</li>
+<li>处理时间 - 事件或数据消息发生在流处理应用程序处理的时间点。即，记录已被消费。处理时间可能是毫秒，小时，或天等。比原始事件时间要晚。</li>
+<li>摄取时间 - 事件或数据记录是Kafka broker存储在topic分区的时间点。与事件时间的差异是，当记录由Kafka broker追加到目标topic时，生成的摄取时间戳，而不是消息创建时间（“源头”）。与处理时间的差异是处理时间是流处理应用处理记录时的时间。比如，如果一个记录从未被处理，那么久没有处理时间，但仍然有摄取时间。</li>
+</ul>
+<h3 id="状态存储"><a href="#状态存储" class="headerlink" title="状态存储"></a>状态存储</h3><p>Kafka Stream提供了所谓的状态存储，流处理程序可以用来存储和查询数据。在Kafka Stream中的每一个任务嵌入了一个或多个状态存储，可通过API来存储和查询处理所需的数据。状态存储可以是一个持久的key/value存储，内存中的HashMap，或者是其他的数据结构。Kafka Stream提供了本地状态存储的故障容错和自动恢复。<br><img src="https://kafka.apache.org/0102/images/streams-architecture-states.jpg" alt=""></p>
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/istio/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/istio/" itemprop="url">
+                  Istio
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-27T20:46:25+08:00">
+                2017-05-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式&云计算</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/微服务/" itemprop="url" rel="index">
+                    <span itemprop="name">微服务</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/istio/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="istio/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Istio是一个用于连接/管理以及安全化微服务的开放平台, 提供了一种简单的方式用于创建微服务网络,并提供负载均衡/服务间认证/监控等能力,关键的是并不需要修改服务本身. 主要提供以下功能:</p>
+<ul>
+<li>Traffic Management: 控制服务之间调用的流量和API调用;</li>
+<li>Observability: 获取服务之间的依赖,以及服务调用的流量走向;</li>
+<li>Policy Enforcement: 控制服务的访问策略,不需要改动服务本身;</li>
+<li>Service Identity and Security: 服务身份与安全相关的功能;</li>
+</ul>
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><p>Istio从架构上看,主要分为2个部分,即:</p>
+<ul>
+<li>控制面板: 管理代理,用于支持流量路由/运行时执行策略等;</li>
+<li>数据面板: 由一系列的智能代理(Envoy)构成,用于仲裁和控制服务之间的网络交互;</li>
+</ul>
+<p><img src="/images/istio-arch.png" alt="Istio Arch"></p>
+<h3 id="Envoy"><a href="#Envoy" class="headerlink" title="Envoy"></a>Envoy</h3><p>Built-in features:</p>
+<ul>
+<li>dynamic service discovery,</li>
+<li>load balancing,</li>
+<li>TLS termination,</li>
+<li>HTTP/2 &amp; gRPC proxying,</li>
+<li>circuit breakers,</li>
+<li>health checks,</li>
+<li>staged rollouts with %-based traffic split,</li>
+<li>fault injection,</li>
+<li>rich metrics</li>
+</ul>
+<p>Envoy将作为一个独立的sidecar与相关微服务部署在同一个Kubernetes的pod上,并提供一系列的属性给Mixer.Mixer以此作为依据执行策略,并发送到监控系统.</p>
+<p>这种sidecar代理模型不需要改变任何服务本身的逻辑,并能增加一系列的功能.</p>
+<h3 id="Mixer"><a href="#Mixer" class="headerlink" title="Mixer"></a>Mixer</h3><p>Mixer负责执行访问控制与使用的策略,并从Envoy收集数据.提供了一个plugin,可以扩展支持多种host环境和backend.</p>
+<h3 id="Istio-Manager"><a href="#Istio-Manager" class="headerlink" title="Istio-Manager"></a>Istio-Manager</h3><p>用户与Istio之间的接口, 收集并验证配置信息并发送给其他组件.作为流量管理的核心附件, Istio-Manager管理所有配置的Envoy代理实例,并提供如下流量管理方式:<br><img src="/images/TrafficManagementOverview-2.png" alt=""></p>
+<p><img src="/images/ManagerAdapters.png" alt=""></p>
+<h3 id="Istio-Auth"><a href="#Istio-Auth" class="headerlink" title="Istio-Auth"></a>Istio-Auth</h3><p>提供服务间以及用户之间的认证,确保不需要修改服务code的前提下增强服务之间的安全性. 主要包括以下3个组件:</p>
+<ul>
+<li>身份识别<ul>
+<li>当Istio运行在Kubernetes时,Auth会使用Kubernetes提供的服务账号来识别运行服务的主体是谁.</li>
+</ul>
+</li>
+<li>key管理<ul>
+<li>Auth提供了一个CA自动化生成和管理key和证书.</li>
+</ul>
+</li>
+<li>通讯安全<ul>
+<li>服务间的通讯通过Envoy在客户端和服务端提供tunnel来保证服务调用的安全.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/Istio_Auth.png" alt=""></p>
+<h2 id="分布式跟踪"><a href="#分布式跟踪" class="headerlink" title="分布式跟踪"></a>分布式跟踪</h2><p>Istio的分布式跟踪是基于Twitter开源的<a href="zipkin/">zipkin</a>分布式跟踪系统,理论模型来自于Google Dapper 论文.</p>
+<h3 id="启动zipkin"><a href="#启动zipkin" class="headerlink" title="启动zipkin"></a>启动zipkin</h3><p>安装Istio时会启动zipkin addon,当然也可以使用如下命令启动:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">kubectl apply -f install/kubernetes/addons/zipkin.yaml</div></pre></td></tr></table></figure></p>
+<h3 id="访问zipkin"><a href="#访问zipkin" class="headerlink" title="访问zipkin"></a>访问zipkin</h3><p>访问zipkin dashboard: <a href="http://localhost:9411" target="_blank" rel="external">http://localhost:9411</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">kubectl port-forward $(kubectl get pod -l app=zipkin -o jsonpath=&apos;&#123;.items[0].metadata.name&#125;&apos;) 9411:9411</div></pre></td></tr></table></figure></p>
+<h3 id="在服务中enable-trace"><a href="#在服务中enable-trace" class="headerlink" title="在服务中enable trace"></a>在服务中enable trace</h3><p>服务本身实现需要做一定的改动,即从最初始的HTTP请求中获取以下header并传递给其他的请求:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">x-request-id</div><div class="line">x-b3-traceid</div><div class="line">x-b3-spanid</div><div class="line">x-b3-parentspanid</div><div class="line">x-b3-sampled</div><div class="line">x-b3-flags</div><div class="line">x-ot-span-context</div></pre></td></tr></table></figure></p>
+<h2 id="启用Ingress"><a href="#启用Ingress" class="headerlink" title="启用Ingress"></a>启用Ingress</h2><p>在Kubernetes环境下, Istio使用了内置的Ingress来暴露服务,目前支持HTTP和HTTPS两种方式. 具体的Ingress,参见<a href="/kubernetes-ingress/">Kubernetes Ingress</a>.</p>
+<h3 id="配置HTTP服务"><a href="#配置HTTP服务" class="headerlink" title="配置HTTP服务"></a>配置HTTP服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">cat &lt;&lt;EOF | kubectl create -f -</div><div class="line">apiVersion: extensions/v1beta1</div><div class="line">kind: Ingress</div><div class="line">metadata:</div><div class="line">  name: simple-ingress</div><div class="line">  annotations:</div><div class="line">    kubernetes.io/ingress.class: istio</div><div class="line">spec:</div><div class="line">  rules:</div><div class="line">  - http:</div><div class="line">      paths:</div><div class="line">      - path: /headers</div><div class="line">        backend:</div><div class="line">          serviceName: httpbin</div><div class="line">          servicePort: 8000</div><div class="line">      - path: /delay/.*</div><div class="line">        backend:</div><div class="line">          serviceName: httpbin</div><div class="line">          servicePort: 8000</div><div class="line">EOF</div></pre></td></tr></table></figure>
+<h3 id="配置HTTPS服务"><a href="#配置HTTPS服务" class="headerlink" title="配置HTTPS服务"></a>配置HTTPS服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">cat &lt;&lt;EOF | kubectl create -f -</div><div class="line">apiVersion: extensions/v1beta1</div><div class="line">kind: Ingress</div><div class="line">metadata:</div><div class="line">  name: secured-ingress</div><div class="line">  annotations:</div><div class="line">    kubernetes.io/ingress.class: istio</div><div class="line">spec:</div><div class="line">  tls:</div><div class="line">    - secretName: ingress-secret</div><div class="line">  rules:</div><div class="line">  - http:</div><div class="line">      paths:</div><div class="line">      - path: /ip</div><div class="line">        backend:</div><div class="line">          serviceName: httpbin</div><div class="line">          servicePort: 8000</div><div class="line">EOF</div></pre></td></tr></table></figure>
+<h2 id="启用Egress"><a href="#启用Egress" class="headerlink" title="启用Egress"></a>启用Egress</h2><p>默认情况下,Istio中的服务是无法访问cluster之外的服务的,这是因为pod中的iptable设置为所有的对外请求都指向sidecar proxy. 而为了能访问外部服务, Istio提供了两种方式来解决这个问题.</p>
+<h3 id="配置外部服务"><a href="#配置外部服务" class="headerlink" title="配置外部服务"></a>配置外部服务</h3><p>注册一个HTTP和HTTPS服务, 如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">cat &lt;&lt;EOF | kubectl create -f -</div><div class="line">apiVersion: v1</div><div class="line">kind: Service</div><div class="line">metadata:</div><div class="line"> name: externalbin</div><div class="line">spec:</div><div class="line"> type: ExternalName</div><div class="line"> externalName: httpbin.org</div><div class="line"> ports:</div><div class="line"> - port: 80</div><div class="line">   # important to set protocol name</div><div class="line">   name: http</div><div class="line">EOF</div></pre></td></tr></table></figure></p>
+<p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">cat &lt;&lt;EOF | kubectl create -f -</div><div class="line">apiVersion: v1</div><div class="line">kind: Service</div><div class="line">metadata:</div><div class="line"> name: securegoogle</div><div class="line">spec:</div><div class="line"> type: ExternalName</div><div class="line"> externalName: www.google.com</div><div class="line"> ports:</div><div class="line"> - port: 443</div><div class="line">   # important to set protocol name</div><div class="line">   name: https</div><div class="line">EOF</div></pre></td></tr></table></figure></p>
+<p>其中, metadata.name 就是内部服务所需要访问的外部服务的名称, spec.externalName则是外部服务的DNS名称.</p>
+<p>执行如下命令可以尝试访问外部服务,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">export SOURCE_POD=$(kubectl get pod -l app=sleep -o jsonpath=&#123;.items..metadata.name&#125;)</div><div class="line">kubectl exec -it $SOURCE_POD -c sleep bash</div><div class="line">curl http://externalbin/headers</div><div class="line">curl http://securegoogle:443</div></pre></td></tr></table></figure></p>
+<h3 id="直接访问外部服务"><a href="#直接访问外部服务" class="headerlink" title="直接访问外部服务"></a>直接访问外部服务</h3><p>Istio Egress目前只支持访问HTTP/HTTPS请求,而为了支持其他协议请求(如mqtt, mongo等), 就需要配置服务的Envoy sidecar来避免截取外部请求.<br>最简单的方式是使用参数–includeIPRanges来指定内部cluster服务所使用的IP范围.</p>
+<blockquote>
+<p>Note: 不同的cloud provider所支持的IP范围和获取方式不尽相同.</p>
+</blockquote>
+<p>例如, minikube支持如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">kubectl apply -f &lt;(istioctl kube-inject -f samples/apps/sleep/sleep.yaml --includeIPRanges=10.0.0.1/24)</div></pre></td></tr></table></figure></p>
+<h2 id="配置请求路由"><a href="#配置请求路由" class="headerlink" title="配置请求路由"></a>配置请求路由</h2><p>默认配置下,Istio会将所有的请求路由到同一个服务的所有版本上.此外,Istio提供了根据请求内容的路由规则,如下规则描述了所有的请求都会指向服务的版本v1:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">type: route-rule</div><div class="line">name: ratings-default</div><div class="line">namespace: default</div><div class="line">spec:</div><div class="line">  destination: ratings.default.svc.cluster.local</div><div class="line">  precedence: 1</div><div class="line">  route:</div><div class="line">  - tags:</div><div class="line">      version: v1</div><div class="line">    weight: 100</div><div class="line">---</div><div class="line">type: route-rule</div><div class="line">name: reviews-default</div><div class="line">namespace: default</div><div class="line">spec:</div><div class="line">  destination: reviews.default.svc.cluster.local</div><div class="line">  precedence: 1</div><div class="line">  route:</div><div class="line">  - tags:</div><div class="line">      version: v1</div><div class="line">    weight: 100</div><div class="line">---</div><div class="line">type: route-rule</div><div class="line">name: details-default</div><div class="line">namespace: default</div><div class="line">spec:</div><div class="line">  destination: details.default.svc.cluster.local</div><div class="line">  precedence: 1</div><div class="line">  route:</div><div class="line">  - tags:</div><div class="line">      version: v1</div><div class="line">    weight: 100</div><div class="line">---</div><div class="line">type: route-rule</div><div class="line">name: productpage-default</div><div class="line">namespace: default</div><div class="line">spec:</div><div class="line">  destination: productpage.default.svc.cluster.local</div><div class="line">  precedence: 1</div><div class="line">  route:</div><div class="line">  - tags:</div><div class="line">      version: v1</div><div class="line">    weight: 100</div><div class="line">---</div></pre></td></tr></table></figure></p>
+<p>如果需要将某些请求指向其他版本的服务,如根据请求的cookie进行路由:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">destination: reviews.default.svc.cluster.local</div><div class="line">match:</div><div class="line">  httpHeaders:</div><div class="line">    cookie:</div><div class="line">      regex: ^(.*?;)?(user=jason)(;.*)?$</div><div class="line">precedence: 2</div><div class="line">route:</div><div class="line">- tags:</div><div class="line">    version: v2</div></pre></td></tr></table></figure></p>
+<p>其他具体的规则,参见: <a href="https://istio.io/docs/reference/config/traffic-rules/routing-rules.html#routerule" target="_blank" rel="external">https://istio.io/docs/reference/config/traffic-rules/routing-rules.html#routerule</a></p>
+<h2 id="错误注入"><a href="#错误注入" class="headerlink" title="错误注入"></a>错误注入</h2><p>Istio提供2种错误类型可以注入到请求中:</p>
+<ul>
+<li>delays: 属于时序故障,模拟网络延迟或者上游服务负载过重等;</li>
+<li>aborts: 属于崩溃故障,模拟上游服务出现故障;一般返回HTTP Error Code或者TCP连接错误代码;</li>
+</ul>
+<p>故障注入规则描述如下例子所述:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">destination: ratings.default.svc.cluster.local</div><div class="line">httpFault:</div><div class="line">  delay:</div><div class="line">    fixedDelay: 7s</div><div class="line">    percent: 100</div><div class="line">match:</div><div class="line">  httpHeaders:</div><div class="line">    cookie:</div><div class="line">      regex: &quot;^(.*?;)?(user=jason)(;.*)?$&quot;</div><div class="line">precedence: 2</div><div class="line">route:</div><div class="line"> - tags:</div><div class="line">    version: v1</div></pre></td></tr></table></figure>
+<h2 id="设置请求超时"><a href="#设置请求超时" class="headerlink" title="设置请求超时"></a>设置请求超时</h2><p>HTTP请求超时可以通过在路由规则中设置字段httpReqTimeout实现.<br>具体例子如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">cat &lt;&lt;EOF | istioctl replace</div><div class="line">type: route-rule</div><div class="line">name: reviews-default</div><div class="line">spec:</div><div class="line">  destination: reviews.default.svc.cluster.local</div><div class="line">  route:</div><div class="line">  - tags:</div><div class="line">      version: v2</div><div class="line">  httpReqTimeout:</div><div class="line">    simpleTimeout:</div><div class="line">      timeout: 1s</div><div class="line">EOF</div></pre></td></tr></table></figure></p>
+<h2 id="限流"><a href="#限流" class="headerlink" title="限流"></a>限流</h2><p>在Istio的mixer中配置限流规则,如下ratelimit.yaml:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">rules:</div><div class="line">- selector: source.labels[&quot;app&quot;]==&quot;reviews&quot; &amp;&amp; source.labels[&quot;version&quot;] == &quot;v3&quot;  </div><div class="line">- aspects:</div><div class="line">  - kind: quotas</div><div class="line">    params:</div><div class="line">      quotas:</div><div class="line">      - descriptorName: RequestCount</div><div class="line">        maxAmount: 5000</div><div class="line">        expiration: 5s</div><div class="line">        labels:</div><div class="line">          label1: target.service</div></pre></td></tr></table></figure></p>
+<p>如果target.service=rating, 那么计数器的key则为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$aspect_id;RequestCount;maxAmount=5000;expiration=5s;label1=ratings</div></pre></td></tr></table></figure></p>
+<p>执行如下命令可以使得rating服务的请求控制在每5秒5000次(限定在reviews v3服务在调用时生效):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">istioctl mixer rule create global ratings.default.svc.cluster.local -f ratelimit.yaml</div></pre></td></tr></table></figure></p>
+<h2 id="简单的访问控制"><a href="#简单的访问控制" class="headerlink" title="简单的访问控制"></a>简单的访问控制</h2><p>Istio可以通过设置规则实现简单的访问控制.</p>
+<h3 id="使用denials属性"><a href="#使用denials属性" class="headerlink" title="使用denials属性"></a>使用denials属性</h3><p>例如:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">rules:</div><div class="line">- aspects:</div><div class="line">  - kind: denials</div><div class="line">  selector: source.labels[&quot;app&quot;]==&quot;reviews&quot; &amp;&amp; source.labels[&quot;version&quot;] == &quot;v3&quot;</div></pre></td></tr></table></figure></p>
+<p>执行如下命令可以使rating服务拒绝来自reviews v3服务的任何请求.</p>
+<p>istioctl mixer rule create global ratings.default.svc.cluster.local -f samples/apps/bookinfo/mixer-rule-ratings-denial.yaml</p>
+<h3 id="使用黑白名单"><a href="#使用黑白名单" class="headerlink" title="使用黑白名单"></a>使用黑白名单</h3><p>使用黑白名单之前需要先定义一个adapter,如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- name: versionList</div><div class="line">  impl: genericListChecker</div><div class="line">  params:</div><div class="line">    listEntries: [&quot;v1&quot;, &quot;v2&quot;]</div></pre></td></tr></table></figure>
+<p>启用白名单时blacklist设置为false,反之为true.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">rules:</div><div class="line">  aspects:</div><div class="line">  - kind: lists</div><div class="line">    adapter: versionList</div><div class="line">    params:</div><div class="line">      blacklist: false</div><div class="line">      checkExpression: source.labels[&quot;version&quot;]</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hono/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/hono/" itemprop="url">
+                  IoT Platform
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-27T20:46:25+08:00">
+                2017-05-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式&云计算</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/IOT/" itemprop="url" rel="index">
+                    <span itemprop="name">IOT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/hono/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="hono/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><p>因为本人的开发环境是Mac，所以需要使用socat工具来转发，从而可以访问Remote Docker API。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">socat TCP-LISTEN:1234,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock</div></pre></td></tr></table></figure></p>
+<p>启用Docker Swarm Mode:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker swarm init</div></pre></td></tr></table></figure></p>
+<p>编译整个项目，进入项目根目录，运行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mvn clean install -Ddocker.host=tcp://$&#123;host&#125;:$&#123;port&#125; -Pbuild-docker-image</div></pre></td></tr></table></figure></p>
+<p>其中，${host}是docker host的IP地址或域名，${port}是可以访问Remote Docker API的端口。如前面所述，Mac环境下使用了socat进行端口转发，因此这儿的port则是socat参数中的监听端口。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mvn clean install -Ddocker.host=tcp://127.0.0.1:1234 -Pbuild-docker-image</div></pre></td></tr></table></figure></p>
+<p>如果不执行测试用例、也不编译测试用例类，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mvn clean install -Ddocker.host=tcp://127.0.0.1:1234 -Pbuild-docker-image -Dmaven.test.skip=true</div></pre></td></tr></table></figure></p>
+<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><p>使用docker stack deploy启动整个服务：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/hono/example/target/hono$ docker stack deploy -c docker-compose.yml hono</div></pre></td></tr></table></figure></p>
+<p>运行结束之后会启动一个overlay网络和若干service，结果如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">Creating network hono_hono-net</div><div class="line">Creating service hono_hono</div><div class="line">Creating service hono_kafka</div><div class="line">Creating service hono_qdrouter</div><div class="line">Creating service hono_zookeeper</div><div class="line">Creating service hono_rest-adapter</div><div class="line">Creating service hono_auth-server</div><div class="line">Creating service hono_influxdb</div><div class="line">Creating service hono_mqtt-adapter</div><div class="line">Creating service hono_grafana</div><div class="line">Creating service hono_device-registry</div><div class="line">Creating service hono_artemis</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/kubernetes-deployment/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/kubernetes-deployment/" itemprop="url">
+                  容器集群、网络连接、自动化部署
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-12T20:46:25+08:00">
+                2017-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式&云计算</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/Kubernetes/" itemprop="url" rel="index">
+                    <span itemprop="name">Kubernetes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/kubernetes-deployment/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="kubernetes-deployment/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="容器与编排"><a href="#容器与编排" class="headerlink" title="容器与编排"></a>容器与编排</h2><p>毋庸置疑,容器是未来的最为重要的配置编排格式之一, 打包应用程序也将会变得更加容易。虽然像Docker这样的工具提供真实的容器，但是也需要其他工具来处理如replication，failover以及API来自动化部署到多个机器。</p>
+<h2 id="用Kubernetes来进行负载均衡"><a href="#用Kubernetes来进行负载均衡" class="headerlink" title="用Kubernetes来进行负载均衡"></a>用Kubernetes来进行负载均衡</h2><p>Service在部署之前存在一个IP地址，但是这个地址只存在于Kubernetes集群之内。这也就意味着Service对于网络来说根本不可用！当运行在谷歌GCE上的时候，Kubernetes能够自动配置一个负载均衡器来访问应用程序。如果你不是在谷歌GCE上面的话，你就需要做些额外的工作来使负载均衡运行起来。</p>
+<p>将Service直接暴露到一个主机端口也可以，这就是经常使用的方式，但这会令很多Kubernetes的优势无法充分发挥。如果依赖主机上的端口，那么当部署多个应用程序的时候，就会陷入端口冲突,这也使得调度集群或者替代主机变得更加困难。</p>
+<p>参见–&gt; <a href="/kubernetes-ingress/">Kubernetes Ingress</a></p>
+<p><img src="/images/ingress-nginx.png" alt="ingress-nginx"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/distributed-lock/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xi Ning Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/bio.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Technical Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/distributed-lock/" itemprop="url">
+                  分布式锁
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-08T20:46:25+08:00">
+                2017-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式&云计算</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/分布式-云计算/分布式技术架构/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式技术架构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/distributed-lock/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="distributed-lock/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="分布式锁"><a href="#分布式锁" class="headerlink" title="分布式锁"></a>分布式锁</h2><p>分布式锁，是控制分布式系统之间同步访问共享资源的一种方式。在分布式系统中，常常需要协调他们的动作。如果不同的系统或是同一个系统的不同主机之间共享了一个或一组资源，那么访问这些资源的时候，往往需要互斥来防止彼此干扰来保证一致性，在这种情况下，便需要使用到分布式锁。</p>
+<blockquote>
+<p>保证一个方法在同一时间内只能被同一个线程执行</p>
+</blockquote>
+<p>分布式锁期望的效果:</p>
+<blockquote>
+<p>可以保证在分布式部署的应用集群中，同一个方法在同一时间只能被一台机器上的一个线程执行。</p>
+<p>这把锁要是一把可重入锁（避免死锁）</p>
+<p>这把锁最好是一把阻塞锁（根据业务需求考虑要不要这条）</p>
+<p>有高可用的获取锁和释放锁功能</p>
+<p>获取锁和释放锁的性能要好</p>
+</blockquote>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><h3 id="基于数据库实现分布式锁"><a href="#基于数据库实现分布式锁" class="headerlink" title="基于数据库实现分布式锁"></a>基于数据库实现分布式锁</h3><p>要实现分布式锁，最简单的方式可能就是直接创建一张锁表，然后通过操作该表中的数据来实现了。</p>
+<p>当我们要锁住某个方法或资源时，我们就在该表中增加一条记录，想要释放锁的时候就删除这条记录。</p>
+<p>上面这种简单的实现有以下几个问题：</p>
+<blockquote>
+<p>1、这把锁强依赖数据库的可用性，数据库是一个单点，一旦数据库挂掉，会导致业务系统不可用。</p>
+<p>2、这把锁没有失效时间，一旦解锁操作失败，就会导致锁记录一直在数据库中，其他线程无法再获得到锁。</p>
+<p>3、这把锁只能是非阻塞的，因为数据的insert操作，一旦插入失败就会直接报错。没有获得锁的线程并不会进入排队队列，要想再次获得锁就要再次触发获得锁操作。</p>
+<p>4、这把锁是非重入的，同一个线程在没有释放锁之前无法再次获得该锁。因为数据中数据已经存在了。</p>
+</blockquote>
+<p>当然，也可以有其他方式解决上面的问题。</p>
+<ul>
+<li>数据库是单点？搞两个数据库，数据之前双向同步。一旦挂掉快速切换到备库上。</li>
+<li>没有失效时间？只要做一个定时任务，每隔一定时间把数据库中的超时数据清理一遍。</li>
+<li>非阻塞的？搞一个while循环，直到insert成功再返回成功。</li>
+<li>非重入的？在数据库表中加个字段，记录当前获得锁的机器的主机信息和线程信息，那么下次再获取锁的时候先查询数据库，如果当前机器的主机信息和线程信息在数据库可以查到的话，直接把锁分配给他就可以了。</li>
+</ul>
+<h3 id="基于缓存实现分布式锁"><a href="#基于缓存实现分布式锁" class="headerlink" title="基于缓存实现分布式锁"></a>基于缓存实现分布式锁</h3><p>相比较于基于数据库实现分布式锁的方案来说，基于缓存来实现在性能方面会表现的更好一点。而且很多缓存是可以集群部署的，可以解决单点问题。</p>
+<p>目前有很多成熟的缓存产品，包括Redis，memcached等.可以通过设置失效时间, 到达时间之后锁会自动释放.</p>
+<p>但是, 失效时间设置多长时间为好？如何设置的失效时间太短，方法没等执行完，锁就自动释放了，那么就会产生并发问题。如果设置的时间太长，其他获取锁的线程就可能要平白的多等一段时间。</p>
+<ul>
+<li><p>优点: 性能好，实现起来较为方便。</p>
+</li>
+<li><p>缺点: 通过超时时间来控制锁的失效时间并不是十分的靠谱。</p>
+</li>
+</ul>
+<h3 id="基于Zookeeper实现分布式锁"><a href="#基于Zookeeper实现分布式锁" class="headerlink" title="基于Zookeeper实现分布式锁"></a>基于Zookeeper实现分布式锁</h3><p>大致思想即为：</p>
+<blockquote>
+<p>每个客户端对某个方法加锁时，在zookeeper上的与该方法对应的指定节点的目录下，生成一个唯一的瞬时有序节点。 判断是否获取锁的方式很简单，只需要判断有序节点中序号最小的一个。 当释放锁的时候，只需将这个瞬时节点删除即可。同时，其可以避免服务宕机导致的锁无法释放，而产生的死锁问题。</p>
+</blockquote>
+<p>实现程度:</p>
+<ul>
+<li><p>锁无法释放？</p>
+<blockquote>
+<p>使用Zookeeper可以有效的解决锁无法释放的问题，因为在创建锁的时候，客户端会在ZK中创建一个临时节点，一旦客户端获取到锁之后突然挂掉（Session连接断开），那么这个临时节点就会自动删除掉。其他客户端就可以再次获得锁。</p>
+</blockquote>
+</li>
+<li><p>非阻塞锁？</p>
+<blockquote>
+<p>使用Zookeeper可以实现阻塞的锁，客户端可以通过在ZK中创建顺序节点，并且在节点上绑定监听器，一旦节点有变化，Zookeeper会通知客户端，客户端可以检查自己创建的节点是不是当前所有节点中序号最小的，如果是，那么自己就获取到锁，便可以执行业务逻辑了。</p>
+</blockquote>
+</li>
+<li><p>不可重入？</p>
+<blockquote>
+<p>使用Zookeeper也可以有效的解决不可重入的问题，客户端在创建节点的时候，把当前客户端的主机信息和线程信息直接写入到节点中，下次想要获取锁的时候和当前最小的节点中的数据比对一下就可以了。如果和自己的信息一样，那么自己直接获取到锁，如果不一样就再创建一个临时的顺序节点，参与排队。</p>
+</blockquote>
+</li>
+<li><p>单点问题？</p>
+<blockquote>
+<p>使用Zookeeper可以有效的解决单点问题，ZK是集群部署的，只要集群中有半数以上的机器存活，就可以对外提供服务。</p>
+</blockquote>
+</li>
+</ul>
+<p>可以直接使用zookeeper第三方库Curator客户端，这个客户端中封装了一个可重入的锁服务。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">public boolean tryLock(long timeout, TimeUnit unit) throws InterruptedException &#123;</div><div class="line">    try &#123;</div><div class="line">        return interProcessMutex.acquire(timeout, unit);</div><div class="line">    &#125; catch (Exception e) &#123;</div><div class="line">        e.printStackTrace();</div><div class="line">    &#125;</div><div class="line">    return true;</div><div class="line">&#125;</div><div class="line">public boolean unlock() &#123;</div><div class="line">    try &#123;</div><div class="line">        interProcessMutex.release();</div><div class="line">    &#125; catch (Throwable e) &#123;</div><div class="line">        log.error(e.getMessage(), e);</div><div class="line">    &#125; finally &#123;</div><div class="line">        executorService.schedule(new Cleaner(client, path), delayTimeForClean, TimeUnit.MILLISECONDS);</div><div class="line">    &#125;</div><div class="line">    return true;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Curator提供的InterProcessMutex是分布式锁的实现。acquire方法用户获取锁，release方法用于释放锁。</p>
+<p>但是，Zookeeper实现的分布式锁其实存在一个缺点，那就是性能上可能并没有缓存服务那么高。因为每次在创建锁和释放锁的过程中，都要动态创建、销毁瞬时节点来实现锁功能。ZK中创建和删除节点只能通过Leader服务器来执行，然后将数据sync到所有的Follower机器上。</p>
+<p>此外，使用Zookeeper也有可能带来并发问题，只是并不常见而已。考虑这样的情况，由于网络抖动，客户端可ZK集群的session连接断了，那么zk以为客户端挂了，就会删除临时节点，这时候其他客户端就可以获取到分布式锁了,就可能产生并发问题。</p>
+<blockquote>
+<p>这个问题不常见是因为zk有重试机制，一旦zk集群检测不到客户端的心跳，就会重试，Curator客户端支持多种重试策略。多次重试之后还不行的话才会删除临时节点。</p>
+<p>选择一个合适的重试策略也比较重要，要在锁的粒度和并发之间找一个平衡。</p>
+</blockquote>
+<h2 id="三种方案的比较"><a href="#三种方案的比较" class="headerlink" title="三种方案的比较"></a>三种方案的比较</h2><p>上面几种方式，哪种方式都无法做到完美。就像CAP一样，在复杂性、可靠性、性能等方面无法同时满足，所以，根据不同的应用场景选择最适合自己的才是王道。</p>
+<ul>
+<li><p>从理解的难易程度角度（从低到高）</p>
+<ul>
+<li>数据库 &gt; 缓存 &gt; Zookeeper</li>
+</ul>
+</li>
+<li><p>从实现的复杂性角度（从低到高）</p>
+<ul>
+<li>Zookeeper &gt;= 缓存 &gt; 数据库</li>
+</ul>
+</li>
+<li><p>从性能角度（从高到低）</p>
+<ul>
+<li>缓存 &gt; Zookeeper &gt;= 数据库</li>
+</ul>
+</li>
+<li><p>从可靠性角度（从高到低）</p>
+<ul>
+<li>Zookeeper &gt; 缓存 &gt; 数据库</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/bio.png"
+               alt="Xi Ning Wang" />
+          <p class="site-author-name" itemprop="name">Xi Ning Wang</p>
+           
+              <p class="site-description motion-element" itemprop="description">专注于分布式高性能技术架构、IoT云平台、机器/深度学习</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">35</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xi Ning Wang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
